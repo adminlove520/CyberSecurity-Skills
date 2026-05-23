@@ -41,9 +41,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-int(f"Mission '{args.name}' initialized in framework/MISSION_CONTROL.md")
-    else:
-        parser.print_help()
-
-if __name__ == "__main__":
-    main()
