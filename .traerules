@@ -1,0 +1,203 @@
+# CyberSecurity-Skills Rules for Trae
+
+When performing security tasks, refer to the following skill library:
+
+- **🌐 DNS枚举 (DNS Enumeration)**: Path: `01-信息搜集-Reconnaissance\skills\DNS枚举-DNSEnumeration.md`
+- **🎯 主动信息搜集 (Active Reconnaissance)**: Path: `01-信息搜集-Reconnaissance\skills\主动信息搜集-ActiveRecon.md`
+- **🔗 子域名探测 (Subdomain Discovery)**: Path: `01-信息搜集-Reconnaissance\skills\子域名探测-SubdomainDiscovery.md`
+- **🖥️ 目标技术栈识别 (Technology Stack Fingerprinting)**: Path: `01-信息搜集-Reconnaissance\skills\目标技术栈识别-TechStackFingerprint.md`
+- **👥 社会工程学信息收集 (Social Engineering Information Gathering)**: Path: `01-信息搜集-Reconnaissance\skills\社会工程学信息-SocialEngineeringInfo.md`
+- **🌍 网络空间搜索引擎 (Cyberspace Search Engine)**: Path: `01-信息搜集-Reconnaissance\skills\网络空间搜索引擎-OSINT-SearchEngine.md`
+- **🕵️ 被动信息搜集 (Passive Reconnaissance / OSINT)**: Path: `01-信息搜集-Reconnaissance\skills\被动信息搜集-PassiveRecon.md`
+- **🤖 AI Agent漏洞扫描 (AI Agent Vulnerability Scanning)**: Path: `02-漏洞扫描-VulnerabilityScanning\skills\AI代理漏洞扫描-AIAgentVulnScan.md`
+- **📡 Web漏洞扫描 (Web Vulnerability Scanning)**: Path: `02-漏洞扫描-VulnerabilityScanning\skills\Web漏洞扫描-WebVulnScan.md`
+- **🗄️ 数据库安全评估 (Database Security Assessment)**: Path: `02-漏洞扫描-VulnerabilityScanning\skills\数据库安全评估-DatabaseAssessment.md`
+- **🤖 漏洞扫描器自动化 (Vulnerability Scanner Automation)**: Path: `02-漏洞扫描-VulnerabilityScanning\skills\漏洞扫描器自动化-VulnScannerAutomation.md`
+- **🌐 网络漏洞扫描 (Network Vulnerability Scanning)**: Path: `02-漏洞扫描-VulnerabilityScanning\skills\网络漏洞扫描-NetworkVulnScan.md`
+- **🔧 配置审计扫描 (Configuration Audit Scanning)**: Path: `02-漏洞扫描-VulnerabilityScanning\skills\配置审计扫描-ConfigAuditScan.md`
+- **🤖 AI Agent漏洞利用 (AI Agent Exploitation)**: Path: `03-漏洞利用-Exploitation\skills\AI代理漏洞利用-AIAgentExploitation.md`
+- **💀 Metasploit框架利用 (Metasploit Framework Exploitation)**: Path: `03-漏洞利用-Exploitation\skills\Metasploit框架利用-Metasploit.md`
+- **💉 SQL注入利用 (SQL Injection Exploitation)**: Path: `03-漏洞利用-Exploitation\skills\SQL注入利用-SQLInjection.md`
+- **🔗 SSRF - 服务端请求伪造 (Server-Side Request Forgery)**: Path: `03-漏洞利用-Exploitation\skills\SSRF服务端请求伪造-SSRF.md`
+- **🌐 Web漏洞利用 (Web Exploitation)**: Path: `03-漏洞利用-Exploitation\skills\Web漏洞利用-WebExploitation.md`
+- **⚡ XSS跨站脚本攻击 (Cross-Site Scripting Exploitation)**: Path: `03-漏洞利用-Exploitation\skills\XSS跨站脚本-XSSExploitation.md`
+- **⌨️ 命令注入 (Command Injection)**: Path: `03-漏洞利用-Exploitation\skills\命令注入-CommandInjection.md`
+- **📂 文件包含与上传利用 (File Inclusion & Upload Exploitation)**: Path: `03-漏洞利用-Exploitation\skills\文件包含利用-FileInclusion.md`
+- **🔐 认证绕过与权限绕过 (Authentication Bypass & Authorization Bypass)**: Path: `03-漏洞利用-Exploitation\skills\认证绕过-AuthBypass.md`
+- **🐧 Linux权限提升 (Linux Privilege Escalation)**: Path: `04-权限提升-PrivilegeEscalation\skills\Linux提权-LinuxPrivEsc.md`
+- **🪟 Windows权限提升 (Windows Privilege Escalation)**: Path: `04-权限提升-PrivilegeEscalation\skills\Windows提权-WindowsPrivEsc.md`
+- **⬆️ 内核漏洞与服务配置错误提权 (Kernel Exploit & Service Misconfig PrivEsc)**: Path: `04-权限提升-PrivilegeEscalation\skills\内核漏洞与服务配置错误提权-KernelServicePrivEsc.md`
+- **🔑 凭证窃取与利用 (Credential Theft & Exploitation)**: Path: `04-权限提升-PrivilegeEscalation\skills\凭证窃取与利用-CredentialTheft.md`
+- **🕵️ 后渗透信息收集与数据窃取 (Post-Exploitation Info Gathering & Data Exfil)**: Path: `05-后渗透-PostExploitation\skills\信息收集与数据窃取-InfoGatheringDataExfil.md`
+- **🔑 凭证转储与哈希传递 (Credential Dumping & Pass-the-Hash)**: Path: `05-后渗透-PostExploitation\skills\凭证转储与哈希传递-CredentialDumpingPtH.md`
+- **🖥️ 远程控制与交互式Shell (Remote Control & Interactive Shell)**: Path: `05-后渗透-PostExploitation\skills\远程控制与交互式Shell-RemoteControlShell.md`
+- **⌨️ 键盘记录与屏幕捕获 (Keylogging & Screen Capture)**: Path: `05-后渗透-PostExploitation\skills\键盘记录与屏幕捕获-KeyloggingScreenCapture.md`
+- **🔁 PsExec与WMI远程执行 (PsExec & WMI Remote Execution)**: Path: `06-横向移动-LateralMovement\skills\PsExec与WMI远程执行-PsExecWMI.md`
+- **🔗 内网代理与隧道 (Internal Proxy & Tunneling)**: Path: `06-横向移动-LateralMovement\skills\内网代理与隧道-InternalProxyTunnel.md`
+- **🔄 横向移动 (Lateral Movement)**: Path: `06-横向移动-LateralMovement\skills\横向移动-LateralMovement.md`
+- **Bootkit与固件持久化 (Bootkit & Firmware Persistence)**: Path: `07-持久化-Persistence\skills\Bootkit与固件持久化-BootkitFirmwarePersistence.md`
+- **Office应用程序持久化 (Office Application Persistence)**: Path: `07-持久化-Persistence\skills\Office应用程序持久化-OfficePersistence.md`
+- **启动项与登录自动执行 (Boot/Logon Autostart)**: Path: `07-持久化-Persistence\skills\启动项与登录自动执行-BootLogonAutostart.md`
+- **🔐 持久化 - 长期控制 (Persistence - Long-term Access)**: Path: `07-持久化-Persistence\skills\持久化-Persistence.md`
+- **账户创建与凭证持久化 (Account Persistence)**: Path: `07-持久化-Persistence\skills\账户持久化-AccountPersistence.md`
+- **AMSI绕过与EDR规避 (AMSI Bypass & EDR Evasion)**: Path: `08-痕迹清除-CoveringTracks\skills\AMSI绕过与EDR规避-AMSIByPassEDREvasion.md`
+- **代码混淆与反分析 (Code Obfuscation & Anti-Analysis)**: Path: `08-痕迹清除-CoveringTracks\skills\代码混淆与反分析-ObfuscationAntiAnalysis.md`
+- **🧹 痕迹清除 (Covering Tracks / Anti-Forensics)**: Path: `08-痕迹清除-CoveringTracks\skills\痕迹清除-CoveringTracks.md`
+- **进程注入与代码注入 (Process Injection & Code Injection)**: Path: `08-痕迹清除-CoveringTracks\skills\进程注入与代码注入-ProcessInjection.md`
+- **🌐 安全报告模板 - HTML格式 (Security Report Template - HTML)**: Path: `09-报告撰写-Reporting\skills\安全报告模板-HTML.md`
+- **📄 安全报告模板 - Markdown格式 (Security Report Template - Markdown)**: Path: `09-报告撰写-Reporting\skills\安全报告模板-Markdown.md`
+- **📝 安全报告模板 - Word/PDF格式 (Security Report Template - Word/PDF)**: Path: `09-报告撰写-Reporting\skills\安全报告模板-Word.md`
+- **📝 渗透测试报告编写 (Penetration Test Report Writing)**: Path: `09-报告撰写-Reporting\skills\报告编写-PentestReport.md`
+- **📊 漏洞评级与CVSS评分 (Vulnerability Rating & CVSS Scoring)**: Path: `09-报告撰写-Reporting\skills\漏洞评级与CVSS-VulnRatingCVSS.md`
+- **📱 Android安全测试 (Android Security Testing)**: Path: `10-移动安全-MobileSecurity\skills\Android安全测试-AndroidSecurityTest.md`
+- **🍎 iOS安全测试 (iOS Security Testing)**: Path: `10-移动安全-MobileSecurity\skills\iOS安全测试-iOSSecurityTest.md`
+- **📶 Wi-Fi安全审计 (Wi-Fi Security Audit)**: Path: `11-无线安全-WirelessSecurity\skills\WiFi安全审计-WiFiSecurityAudit.md`
+- **🤖 AI Agent代码审计 (AI Agent Code Audit)**: Path: `12-代码审计-CodeAudit\skills\AI Agent代码审计-AIAgentCodeAudit.md`
+- **🔧 C++代码审计 (C++ Code Audit)**: Path: `12-代码审计-CodeAudit\skills\C++代码审计-CPPCodeAudit.md`
+- **⚙️ C代码审计 (C Code Audit)**: Path: `12-代码审计-CodeAudit\skills\C代码审计-CCodeAudit.md`
+- **🐹 Go代码审计 (Go Code Audit)**: Path: `12-代码审计-CodeAudit\skills\Go代码审计-GoCodeAudit.md`
+- **🌐 JavaScript/Node.js代码审计 (JavaScript & Node.js Code Audit)**: Path: `12-代码审计-CodeAudit\skills\JavaScript代码审计-JSCodeAudit.md`
+- **☕ Java代码审计 (Java Code Audit)**: Path: `12-代码审计-CodeAudit\skills\Java代码审计-JavaCodeAudit.md`
+- **☕ Java 代码审计进阶 (Java Audit Advanced)**: Path: `12-代码审计-CodeAudit\skills\Java代码审计进阶-JavaAuditAdvanced.md`
+- **🔍 PHP代码审计 (PHP Code Audit)**: Path: `12-代码审计-CodeAudit\skills\PHP代码审计-PHPCodeAudit.md`
+- **🐘 PHP 代码审计专业版 (PHP Code Audit Pro)**: Path: `12-代码审计-CodeAudit\skills\PHP代码审计专业版-PHPAuditPro.md`
+- **🐍 Python代码审计 (Python Code Audit)**: Path: `12-代码审计-CodeAudit\skills\Python代码审计-PythonCodeAudit.md`
+- **🦀 Rust代码审计 (Rust Code Audit)**: Path: `12-代码审计-CodeAudit\skills\Rust代码审计-RustCodeAudit.md`
+- **⚙️ 动态调试分析 (Dynamic Debug Analysis)**: Path: `13-逆向工程-ReverseEngineering\skills\动态调试分析-DynamicDebugAnalysis.md`
+- **🦠 恶意软件分析 (Malware Analysis)**: Path: `13-逆向工程-ReverseEngineering\skills\恶意软件分析-MalwareAnalysis.md`
+- **🔬 静态逆向分析 (Static Reverse Engineering)**: Path: `13-逆向工程-ReverseEngineering\skills\静态逆向分析-StaticReverseAnalysis.md`
+- **🤖 AI Agent安全审计 (AI Agent Security Audit)**: Path: `14-安全审计-SecurityAudit\skills\AI Agent安全审计-AIAgentSecurityAudit.md`
+- **☁️ 云安全审计 (Cloud Security Audit)**: Path: `14-安全审计-SecurityAudit\skills\云安全审计-CloudSecurityAudit.md`
+- **🏗️ 安全架构审计 (Security Architecture Audit)**: Path: `14-安全审计-SecurityAudit\skills\安全架构审计-SecurityArchitectureAudit.md`
+- **🐳 容器安全审计 (Container Security Audit)**: Path: `14-安全审计-SecurityAudit\skills\容器安全审计-ContainerSecurityAudit.md`
+- **🏛️ 等级保护合规审计 (Classified Protection Compliance Audit)**: Path: `14-安全审计-SecurityAudit\skills\等级保护合规审计-ClassifiedProtectionAudit.md`
+- **🌐 网络安全合规评估 (Network Security Compliance Assessment)**: Path: `14-安全审计-SecurityAudit\skills\网络安全合规评估-NetworkComplianceAssessment.md`
+- **🔧 配置安全审计 (Configuration Security Audit)**: Path: `14-安全审计-SecurityAudit\skills\配置安全审计-ConfigSecurityAudit.md`
+- **🤖 AI安全应急响应 (AI Security Incident Response)**: Path: `15-应急响应-IncidentResponse\skills\AI安全应急响应-AISecurityIncidentResponse.md`
+- **🔫 Linux 应急响应 AI 检查 (LinuxGun AI Response)**: Path: `15-应急响应-IncidentResponse\skills\Linux应急响应AI检查-LinuxGun.md`
+- **📋 事件分类与优先级评估 (Incident Triage & Prioritization)**: Path: `15-应急响应-IncidentResponse\skills\事件分类与优先级评估-IncidentTriage.md`
+- **📝 事件复盘与报告 (Lessons Learned & Reporting)**: Path: `15-应急响应-IncidentResponse\skills\事件复盘与报告-LessonsLearnedReporting.md`
+- **🛑 事件遏制与清除 (Containment & Eradication)**: Path: `15-应急响应-IncidentResponse\skills\事件遏制与清除-ContainmentEradication.md`
+- **☁️ 云环境应急响应 (Cloud Incident Response)**: Path: `15-应急响应-IncidentResponse\skills\云环境应急响应-CloudIncidentResponse.md`
+- **📜 日志收集与分析 (Log Collection & Analysis)**: Path: `15-应急响应-IncidentResponse\skills\日志收集与分析-LogCollectionAnalysis.md`
+- **🌐 网络流量分析 (Network Traffic Analysis)**: Path: `15-应急响应-IncidentResponse\skills\网络流量分析-NetworkTrafficAnalysis.md`
+- **🔐 AI Agent权限与访问控制 (Agent Authorization & Access Control)**: Path: `16-大模型安全-LLMSecurity\skills\AI Agent权限与访问控制-AgentAuthorization.md`
+- **📦 AI供应链安全 (AI Supply Chain Security)**: Path: `16-大模型安全-LLMSecurity\skills\AI供应链安全-AISupplyChainSecurity.md`
+- **⚙️ AI应用安全配置审计 (AI Application Security Configuration Audit)**: Path: `16-大模型安全-LLMSecurity\skills\AI应用安全配置审计-AIAppSecurityConfig.md`
+- **🧪 LLM提示注入与安全防护 (Prompt Injection & Defense)**: Path: `16-大模型安全-LLMSecurity\skills\LLM提示注入与安全防护-PromptInjectionDefense.md`
+- **🔒 LLM数据泄露与隐私保护 (Data Leakage & Privacy Protection)**: Path: `16-大模型安全-LLMSecurity\skills\LLM数据泄露与隐私保护-DataLeakagePrivacy.md`
+- **🎨 多模态AI安全 (Multimodal AI Security)**: Path: `16-大模型安全-LLMSecurity\skills\多模态AI安全-MultimodalAISecurity.md`
+- **🎯 大模型红队测试 (LLM Red Teaming)**: Path: `16-大模型安全-LLMSecurity\skills\大模型红队测试-LLMRedTeaming.md`
+- **🛡️ 模型对抗攻击与防御 (Adversarial Attack & Defense)**: Path: `16-大模型安全-LLMSecurity\skills\模型对抗攻击与防御-AdversarialAttackDefense.md`
+- **📝 模型输出安全与幻觉检测 (Output Safety & Hallucination Detection)**: Path: `16-大模型安全-LLMSecurity\skills\模型输出安全与幻觉检测-OutputSafetyHallucination.md`
+- **🤝 联邦学习安全 (Federated Learning Security)**: Path: `16-大模型安全-LLMSecurity\skills\联邦学习安全-FederatedLearningSecurity.md`
+- **☁️ AWS安全评估 (AWS Security Assessment)**: Path: `17-云安全-CloudSecurity\skills\AWS安全评估-AWSSecurityAssessment.md`
+- **🌤️ Azure安全评估 (Azure Security Assessment)**: Path: `17-云安全-CloudSecurity\skills\Azure安全评估-AzureSecurityAssessment.md`
+- **🟢 GCP安全评估 (GCP Security Assessment)**: Path: `17-云安全-CloudSecurity\skills\GCP安全评估-GCPSecurityAssessment.md`
+- **🔑 云IAM权限与访问控制审计 (Cloud IAM Audit)**: Path: `17-云安全-CloudSecurity\skills\云IAM权限与访问控制审计-CloudIAMAudit.md`
+- **💾 云存储安全配置审计 (Cloud Storage Security)**: Path: `17-云安全-CloudSecurity\skills\云存储安全配置审计-CloudStorageSecurity.md`
+- **🌐 云网络与WAF安全 (Cloud Network & WAF Security)**: Path: `17-云安全-CloudSecurity\skills\云网络与WAF安全-CloudNetworkWAF.md`
+- **🔄 多云安全策略评估 (Multi-Cloud Security Strategy)**: Path: `17-云安全-CloudSecurity\skills\多云安全策略评估-MultiCloudSecurity.md`
+- **⚡ 无服务器架构安全 (Serverless Security)**: Path: `17-云安全-CloudSecurity\skills\无服务器架构安全-ServerlessSecurity.md`
+- **🔗 CI/CD管道安全审计 (CI/CD Pipeline Security)**: Path: `18-安全开发运维-DevSecOps\skills\CI-CD管道安全审计-CICDPipelineSecurity.md`
+- **🌐 DAST动态应用安全测试 (Dynamic Application Security Testing)**: Path: `18-安全开发运维-DevSecOps\skills\DAST动态应用安全测试-DAST.md`
+- **📦 IaC安全扫描 (Infrastructure as Code Security)**: Path: `18-安全开发运维-DevSecOps\skills\IaC安全扫描-InfrastructureAsCodeSecurity.md`
+- **🔍 SAST静态应用安全测试 (Static Application Security Testing)**: Path: `18-安全开发运维-DevSecOps\skills\SAST静态应用安全测试-SAST.md`
+- **🧠 安全需求与威胁建模 (Security Requirements & Threat Modeling)**: Path: `18-安全开发运维-DevSecOps\skills\安全需求与威胁建模-ThreatModeling.md`
+- **🔗 软件供应链安全 (Software Supply Chain Security)**: Path: `18-安全开发运维-DevSecOps\skills\软件供应链安全-SoftwareSupplyChainSecurity.md`
+- **🔧 PLC与RTU安全测试 (PLC & RTU Security Testing)**: Path: `19-工控安全-ICS-OT-Security\skills\PLC与RTU安全测试-PLC-RTU-SecurityTesting.md`
+- **⚙️ SCADA系统安全评估 (SCADA System Security Assessment)**: Path: `19-工控安全-ICS-OT-Security\skills\SCADA系统安全评估-SCADASecurityAssessment.md`
+- **🔒 工业防火墙与网络分段 (Industrial Firewall & Segmentation)**: Path: `19-工控安全-ICS-OT-Security\skills\工业防火墙与网络分段-Industrial-Firewall-Segmentation.md`
+- **📋 工控安全合规审计 - IEC 62443 (ICS Compliance Audit - IEC 62443)**: Path: `19-工控安全-ICS-OT-Security\skills\工控安全合规审计-IEC62443-Audit.md`
+- **🚨 工控安全应急预案 (ICS Incident Response)**: Path: `19-工控安全-ICS-OT-Security\skills\工控安全应急预案-ICS-IncidentResponse.md`
+- **🌐 工控网络协议安全 (ICS Network Protocol Security)**: Path: `19-工控安全-ICS-OT-Security\skills\工控网络协议安全-ICS-NetworkProtocolSecurity.md`
+- **💰 DeFi协议安全评估 (DeFi Protocol Security Assessment)**: Path: `20-区块链安全-Blockchain-Web3-Security\skills\DeFi协议安全评估-DeFiSecurityAssessment.md`
+- **⚡ MEV与跨链桥安全 (MEV & Cross-Chain Bridge Security)**: Path: `20-区块链安全-Blockchain-Web3-Security\skills\MEV与跨链桥安全-MEV-CrossChainBridgeSecurity.md`
+- **🖥️ Web3前端与钱包安全 (Web3 Frontend & Wallet Security)**: Path: `20-区块链安全-Blockchain-Web3-Security\skills\Web3前端与钱包安全-Web3WalletSecurity.md`
+- **🔗 共识机制安全分析 (Consensus Mechanism Security)**: Path: `20-区块链安全-Blockchain-Web3-Security\skills\共识机制安全分析-ConsensusSecurityAnalysis.md`
+- **🛡️ 区块链节点安全加固 (Blockchain Node Hardening)**: Path: `20-区块链安全-Blockchain-Web3-Security\skills\区块链节点安全加固-BlockchainNodeHardening.md`
+- **📝 智能合约安全审计 (Smart Contract Audit)**: Path: `20-区块链安全-Blockchain-Web3-Security\skills\智能合约安全审计-SmartContractAudit.md`
+- **📶 BLE/Zigbee/Z-Wave无线安全测试 (Wireless Protocol Security Testing)**: Path: `21-物联网安全-IoT-Security\skills\BLE-Zigbee-Z-Wave无线安全测试-WirelessProtocolSecurity.md`
+- **🔧 固件逆向与分析 (Firmware Reverse Engineering)**: Path: `21-物联网安全-IoT-Security\skills\固件逆向与分析-FirmwareReverseEngineering.md`
+- **⚙️ 嵌入式设备硬件安全测试 (Embedded Hardware Security)**: Path: `21-物联网安全-IoT-Security\skills\嵌入式设备硬件安全测试-EmbeddedHardwareSecurity.md`
+- **🏠 智能家居与车联网安全 (Smart Home & Connected Vehicle Security)**: Path: `21-物联网安全-IoT-Security\skills\智能家居与车联网安全-SmartHomeConnectedVehicleSecurity.md`
+- **☁️ 物联网平台与云安全 (IoT Platform & Cloud Security)**: Path: `21-物联网安全-IoT-Security\skills\物联网平台与云安全-IoTPlatformCloudSecurity.md`
+- **🌐 物联网通信协议安全 (IoT Communication Security)**: Path: `21-物联网安全-IoT-Security\skills\物联网通信协议安全-IoTCommunicationSecurity.md`
+- **🛡️ DLP数据防泄漏策略 (Data Loss Prevention)**: Path: `22-数据安全与隐私-DataSecurityPrivacy\skills\DLP数据防泄漏策略-DataLossPrevention.md`
+- **🌍 GDPR/个保法合规评估 (Privacy Compliance Assessment)**: Path: `22-数据安全与隐私-DataSecurityPrivacy\skills\GDPR-个保法合规评估-PrivacyCompliance.md`
+- **📋 数据分类与分级保护 (Data Classification & Grading)**: Path: `22-数据安全与隐私-DataSecurityPrivacy\skills\数据分类与分级保护-DataClassificationGrading.md`
+- **🗄️ 数据库安全与加密 (Database Security & Encryption)**: Path: `22-数据安全与隐私-DataSecurityPrivacy\skills\数据库安全与加密-DatabaseSecurityEncryption.md`
+- **🔏 数据脱敏与匿名化 (Data Masking & Anonymization)**: Path: `22-数据安全与隐私-DataSecurityPrivacy\skills\数据脱敏与匿名化-DataMaskingAnonymization.md`
+- **📝 隐私影响评估(PIA) (Privacy Impact Assessment)**: Path: `22-数据安全与隐私-DataSecurityPrivacy\skills\隐私影响评估-PIA-PrivacyImpactAssessment.md`
+- **📊 员工安全意识评估 (Security Awareness Assessment)**: Path: `23-社会工程学-SocialEngineering\skills\员工安全意识评估-SecurityAwarenessAssessment.md`
+- **🏢 物理渗透与社会工程 (Physical Social Engineering)**: Path: `23-社会工程学-SocialEngineering\skills\物理渗透与社会工程-PhysicalSocialEngineering.md`
+- **📞 电话诈骗与Vishing测试 (Vishing Testing)**: Path: `23-社会工程学-SocialEngineering\skills\电话诈骗与Vishing测试-VishingTesting.md`
+- **⚙️ 钓鱼基础设施搭建 (Phishing Infrastructure)**: Path: `23-社会工程学-SocialEngineering\skills\钓鱼基础设施搭建-PhishingInfrastructure.md`
+- **🎣 钓鱼邮件模拟 (Phishing Simulation)**: Path: `23-社会工程学-SocialEngineering\skills\钓鱼邮件模拟-PhishingSimulation.md`
+- **🤖 Agent 黑客技能集 (Agent Hack Skills)**: Path: `24-红蓝对抗-RedBlueTeam\skills\Agent黑客技能集-AgentHackSkills.md`
+- **⚡ BAS攻击模拟平台 (Breach & Attack Simulation)**: Path: `24-红蓝对抗-RedBlueTeam\skills\BAS攻击模拟平台-BreachAttackSimulation.md`
+- **🟣 紫队协作评估 (Purple Team Exercise)**: Path: `24-红蓝对抗-RedBlueTeam\skills\紫队协作评估-PurpleTeamExercise.md`
+- **🔴 红队评估方法论 (Red Team Assessment)**: Path: `24-红蓝对抗-RedBlueTeam\skills\红队评估方法论-RedTeamAssessment.md`
+- **🔵 蓝队防御与检测 (Blue Team Defense & Detection)**: Path: `24-红蓝对抗-RedBlueTeam\skills\蓝队防御与检测-BlueTeamDefense.md`
+- **🔄 闭环防御改进 (Defense Improvement Cycle)**: Path: `24-红蓝对抗-RedBlueTeam\skills\闭环防御改进-DefenseImprovementCycle.md`
+- **📦 SBOM生成与验证 (SBOM Generation & Verification)**: Path: `25-供应链安全-SupplyChainSecurity\skills\SBOM生成与验证-SBOMGeneration.md`
+- **📝 代码签名与供应链完整性 (Code Signing & Supply Chain Integrity)**: Path: `25-供应链安全-SupplyChainSecurity\skills\代码签名与供应链完整性-CodeSigningIntegrity.md`
+- **🎯 供应链攻击检测与响应 (Supply Chain Attack Detection & Response)**: Path: `25-供应链安全-SupplyChainSecurity\skills\供应链攻击检测与响应-SupplyChainAttackResponse.md`
+- **🏢 第三方供应商风险评估 (Third-Party Vendor Risk Assessment)**: Path: `25-供应链安全-SupplyChainSecurity\skills\第三方供应商风险评估-ThirdPartyVendorRisk.md`
+- **🔍 软件依赖与开源合规审计 (Dependency License Compliance)**: Path: `25-供应链安全-SupplyChainSecurity\skills\软件依赖与开源合规审计-DependencyLicenseCompliance.md`
+- **📊 漏洞优先级与风险评估 (Vulnerability Prioritization & Risk Assessment)**: Path: `26-漏洞管理-VulnerabilityManagement\skills\漏洞优先级与风险评估-VulnerabilityPrioritization.md`
+- **🔧 漏洞修复与补丁管理 (Vulnerability Remediation & Patch Management)**: Path: `26-漏洞管理-VulnerabilityManagement\skills\漏洞修复与补丁管理-VulnerabilityRemediation.md`
+- **🏆 漏洞奖励计划与安全众测 (Bug Bounty & Crowdsourced Testing)**: Path: `26-漏洞管理-VulnerabilityManagement\skills\漏洞奖励计划与安全众测-BugBountyCrowdsourcedTesting.md`
+- **🔍 漏洞情报与CVE查询 (Vulnerability Intelligence & CVE Query)**: Path: `26-漏洞管理-VulnerabilityManagement\skills\漏洞情报与CVE查询-VulnerabilityIntelligence.md`
+- **🔄 漏洞生命周期闭环管理 (Vulnerability Lifecycle Management)**: Path: `26-漏洞管理-VulnerabilityManagement\skills\漏洞生命周期闭环管理-VulnerabilityLifecycle.md`
+- **🧪 漏洞验证与PoC测试 (Vulnerability Verification & PoC Testing)**: Path: `26-漏洞管理-VulnerabilityManagement\skills\漏洞验证与PoC测试-VulnerabilityVerification.md`
+- **Linux安全加固与基线检查 (Linux Hardening & Baseline)**: Path: `27-操作系统安全-OSSecurity\skills\Linux安全加固与基线检查-LinuxHardeningBaseline.md`
+- **Linux攻击与权限维持技术 (Linux Attack & Persistence)**: Path: `27-操作系统安全-OSSecurity\skills\Linux攻击与权限维持技术-LinuxAttackPersistence.md`
+- **macOS安全评估与加固 (macOS Security Assessment & Hardening)**: Path: `27-操作系统安全-OSSecurity\skills\macOS安全评估与加固-macOSSecurityHardening.md`
+- **Windows安全加固与基线检查 (Windows Hardening & Baseline)**: Path: `27-操作系统安全-OSSecurity\skills\Windows安全加固与基线检查-WindowsHardeningBaseline.md`
+- **Windows攻击与横向移动技术 (Windows Attack & Lateral Movement)**: Path: `27-操作系统安全-OSSecurity\skills\Windows攻击与横向移动技术-WindowsAttackLateralMovement.md`
+- **国产操作系统安全加固 (Domestic OS Security Hardening)**: Path: `27-操作系统安全-OSSecurity\skills\国产操作系统安全加固-DomesticOSSecurity.md`
+- **基于ATT&CK的威胁狩猎 (MITRE ATT&CK Threat Hunting)**: Path: `28-威胁狩猎-ThreatHunting\skills\ATT&CK威胁狩猎-MITREAttackHunting.md`
+- **基于Sigma规则的检测工程 (Sigma Rule Detection Engineering)**: Path: `28-威胁狩猎-ThreatHunting\skills\Sigma规则检测工程-SigmaRuleEngineering.md`
+- **威胁狩猎方法论与假设驱动 (Threat Hunting Methodology & Hypothesis)**: Path: `28-威胁狩猎-ThreatHunting\skills\威胁狩猎方法论-ThreatHuntingMethodology.md`
+- **网络流量与日志异常检测 (Network Traffic & Log Anomaly Detection)**: Path: `28-威胁狩猎-ThreatHunting\skills\网络流量与日志异常检测-TrafficLogAnomalyDetection.md`
+- **APT组织分析与归因 (APT Group Analysis & Attribution)**: Path: `29-威胁情报-ThreatIntelligence\skills\APT组织分析与归因-APTGroupAnalysisAttribution.md`
+- **MISP平台部署与威胁情报共享 (MISP Deployment & Threat Intel Sharing)**: Path: `29-威胁情报-ThreatIntelligence\skills\MISP部署与威胁情报共享-MISPDeploymentIntelSharing.md`
+- **威胁情报馈入与TAXII/STIX管理 (Threat Intelligence Feeds & TAXII/STIX)**: Path: `29-威胁情报-ThreatIntelligence\skills\威胁情报馈入与TAXII-STIX管理-ThreatIntelFeedsTAXIISTIX.md`
+- **威胁情报驱动安全运营 (Threat Intel Driven Security Operations)**: Path: `29-威胁情报-ThreatIntelligence\skills\威胁情报驱动安全运营-ThreatIntelDrivenSOC.md`
+- **Linux数字取证分析 (Linux Digital Forensics)**: Path: `30-数字取证-DigitalForensics\skills\Linux数字取证分析-LinuxDigitalForensics.md`
+- **Windows数字取证分析 (Windows Digital Forensics)**: Path: `30-数字取证-DigitalForensics\skills\Windows数字取证分析-WindowsDigitalForensics.md`
+- **内存取证分析 (Memory Forensics with Volatility)**: Path: `30-数字取证-DigitalForensics\skills\内存取证分析-Volatility-MemoryForensicsVolatility.md`
+- **浏览器与邮件取证 (Browser & Email Forensics)**: Path: `30-数字取证-DigitalForensics\skills\浏览器与邮件取证-BrowserEmailForensics.md`
+- **磁盘镜像与证据获取 (Disk Imaging & Evidence Acquisition)**: Path: `30-数字取证-DigitalForensics\skills\磁盘镜像与证据获取-DiskImagingEvidenceAcquisition.md`
+- **SIEM告警规则与关联分析 (SIEM Alert Rules & Correlation)**: Path: `31-SOC运营-SOCOperations\skills\SIEM告警规则与关联分析-SIEMAlertCorrelation.md`
+- **SOC事件分级与响应流程 (SOC Triage & Response)**: Path: `31-SOC运营-SOCOperations\skills\SOC事件分级与响应流程-SOCTriageResponse.md`
+- **SOC指标与运营效能度量 (SOC Metrics & Operational KPIs)**: Path: `31-SOC运营-SOCOperations\skills\SOC指标与运营效能度量-SOCMetricsKPIs.md`
+- **安全自动化与编排 (Security Automation & Orchestration - SOAR)**: Path: `31-SOC运营-SOCOperations\skills\安全自动化与编排-SOAR-SecurityAutomationOrchestration.md`
+- **AD域安全与攻击路径分析 (AD Security & Attack Path Analysis)**: Path: `32-身份访问管理-IAM\skills\AD域安全与攻击路径分析-ADSecurityAttackPathAnalysis.md`
+- **PAM特权账号管理 (Privileged Access Management)**: Path: `32-身份访问管理-IAM\skills\PAM特权账号管理-PrivilegedAccessManagement.md`
+- **云IAM与联邦认证 (Cloud IAM & Federation)**: Path: `32-身份访问管理-IAM\skills\云IAM与联邦认证-CloudIAMFederation.md`
+- **企业IAM策略与架构 (Enterprise IAM Strategy & Architecture)**: Path: `32-身份访问管理-IAM\skills\企业IAM策略与架构-EnterpriseIAMStrategy.md`
+- **Kubernetes RBAC与安全策略 (Kubernetes RBAC & Security Policy)**: Path: `33-容器安全-ContainerSecurity\skills\Kubernetes RBAC与安全策略-KubernetesRBACSecurityPolicy.md`
+- **容器运行时安全 (Container Runtime Security with Falco)**: Path: `33-容器安全-ContainerSecurity\skills\容器运行时安全-Falco-ContainerRuntimeSecurityFalco.md`
+- **容器逃逸检测与防御 (Container Escape Detection & Defense)**: Path: `33-容器安全-ContainerSecurity\skills\容器逃逸检测与防御-ContainerEscapeDetectionDefense.md`
+- **容器镜像安全与漏洞扫描 (Container Image Security & Scanning)**: Path: `33-容器安全-ContainerSecurity\skills\容器镜像安全与漏洞扫描-ContainerImageSecurityScanning.md`
+- **API认证与授权安全 (API Authentication & Authorization Security)**: Path: `34-API安全-APISecurity\skills\API认证与授权安全-APIAuthAuthorizationSecurity.md`
+- **GraphQL与微服务API安全 (GraphQL & Microservice API Security)**: Path: `34-API安全-APISecurity\skills\GraphQL与微服务API安全-GraphQLMicroserviceAPISecurity.md`
+- **OWASP API安全测试 (OWASP API Security Testing)**: Path: `34-API安全-APISecurity\skills\OWASP API安全测试-OWASPAPISecurityTesting.md`
+- **PKI架构与证书安全管理 (PKI Architecture & Certificate Management)**: Path: `35-密码学与PKI-CryptographyPKI\skills\PKI架构与证书安全管理-PKIArchitectureCertificateManagement.md`
+- **TLS/SSL安全配置与审计 (TLS/SSL Security Configuration & Audit)**: Path: `35-密码学与PKI-CryptographyPKI\skills\TLS-SSL安全配置与审计-TLSSSLSecurityConfigurationAudit.md`
+- **加密算法与密钥管理 (Encryption Algorithms & Key Management)**: Path: `35-密码学与PKI-CryptographyPKI\skills\加密算法与密钥管理-EncryptionAlgorithmsKeyManagement.md`
+- **ZTNA解决方案与IAM集成 (ZTNA Solutions & IAM Integration)**: Path: `36-零信任架构-ZeroTrust\skills\ZTNA解决方案与IAM集成-ZTNASolutionsIAMIntegration.md`
+- **微隔离与软件定义边界 (Microsegmentation & Software-Defined Perimeter)**: Path: `36-零信任架构-ZeroTrust\skills\微隔离与软件定义边界-SDP-MicrosegmentationSDP.md`
+- **零信任架构设计与实施 (Zero Trust Architecture Design & Implementation)**: Path: `36-零信任架构-ZeroTrust\skills\零信任架构设计与实施-ZeroTrustArchitectureDesign.md`
+- **EDR部署与检测规则 (EDR Deployment & Detection Rules)**: Path: `37-端点安全-EndpointSecurity\skills\EDR部署与检测规则-EDRDeploymentDetectionRules.md`
+- **文件less恶意软件与LOLBins检测 (Fileless Malware & LOLBins Detection)**: Path: `37-端点安全-EndpointSecurity\skills\文件less恶意软件与LOLBins检测-FilelessMalwareLOLBinsDetection.md`
+- **移动设备安全与MDM (Mobile Device Security & MDM)**: Path: `37-端点安全-EndpointSecurity\skills\移动设备安全与MDM-MobileDeviceSecurityMDM.md`
+- **端点加固与合规基线 (Endpoint Hardening & Compliance Baseline)**: Path: `37-端点安全-EndpointSecurity\skills\端点加固与合规基线-EndpointHardeningComplianceBaseline.md`
+- **勒索软件应急响应与恢复 (Ransomware Incident Response & Recovery)**: Path: `38-勒索软件防御-RansomwareDefense\skills\勒索软件应急响应与恢复-RansomwareIncidentResponseRecovery.md`
+- **勒索软件攻击链分析与检测 (Ransomware Attack Chain Analysis & Detection)**: Path: `38-勒索软件防御-RansomwareDefense\skills\勒索软件攻击链分析与检测-RansomwareAttackChainAnalysisDetection.md`
+- **反勒索软件加固与备份策略 (Anti-Ransomware Hardening & Backup Strategy)**: Path: `38-勒索软件防御-RansomwareDefense\skills\反勒索软件加固与备份策略-AntiRansomwareHardeningBackup.md`
+- **安全框架与合规审计 (Security Framework & Compliance Audit)**: Path: `39-安全治理合规-GovernanceCompliance\skills\安全框架与合规审计-SecurityFrameworkComplianceAudit.md`
+- **安全策略体系与安全意识 (Security Policy & Awareness)**: Path: `39-安全治理合规-GovernanceCompliance\skills\安全策略体系与安全意识-SecurityPolicyAwareness.md`
+- **风险管理与安全度量 (Risk Management & Security Metrics)**: Path: `39-安全治理合规-GovernanceCompliance\skills\风险管理与安全度量-RiskManagementSecurityMetrics.md`

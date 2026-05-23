@@ -1,0 +1,2555 @@
+{
+  "mitre_attack_mapping": {
+    "T1595": [
+      "01-001",
+      "01-002",
+      "01-003",
+      "01-004",
+      "01-005",
+      "01-006",
+      "01-007",
+      "02-001",
+      "02-003",
+      "02-004",
+      "02-005",
+      "02-006",
+      "02-007",
+      "24-006",
+      "24-004",
+      "24-003",
+      "24-001",
+      "24-002",
+      "24-005",
+      "29-001"
+    ],
+    "T1592": [
+      "01-001",
+      "01-002",
+      "01-003",
+      "01-004",
+      "01-005",
+      "01-006",
+      "01-007",
+      "02-001",
+      "02-003",
+      "02-004",
+      "02-005",
+      "02-006",
+      "02-007"
+    ],
+    "T1590": [
+      "01-001",
+      "01-002",
+      "01-003",
+      "01-004",
+      "01-005",
+      "01-006",
+      "01-007",
+      "31-002"
+    ],
+    "T1596": [
+      "01-001",
+      "01-002",
+      "01-003",
+      "01-004",
+      "01-005",
+      "01-006",
+      "01-007"
+    ],
+    "T1589": [
+      "02-001",
+      "02-003",
+      "02-004",
+      "02-005",
+      "02-006",
+      "02-007"
+    ],
+    "T1190": [
+      "03-001",
+      "03-002",
+      "03-003",
+      "03-004",
+      "03-005",
+      "03-006",
+      "03-007",
+      "03-008",
+      "03-009",
+      "12-010",
+      "12-011",
+      "24-006",
+      "34-003",
+      "34-001"
+    ],
+    "T1505": [
+      "03-001",
+      "03-002",
+      "03-003",
+      "03-004",
+      "03-005",
+      "03-006",
+      "03-007",
+      "03-008",
+      "03-009",
+      "30-004"
+    ],
+    "T1203": [
+      "03-001",
+      "03-002",
+      "03-003",
+      "03-004",
+      "03-005",
+      "03-006",
+      "03-007",
+      "03-008",
+      "03-009"
+    ],
+    "T1210": [
+      "03-001",
+      "03-002",
+      "03-003",
+      "03-004",
+      "03-005",
+      "03-006",
+      "03-007",
+      "03-008",
+      "03-009"
+    ],
+    "T1068": [
+      "04-001",
+      "04-002",
+      "04-003",
+      "04-004",
+      "24-006"
+    ],
+    "T1548": [
+      "04-001",
+      "04-002",
+      "04-003",
+      "04-004",
+      "27-003",
+      "27-004",
+      "27-005",
+      "27-001",
+      "27-002",
+      "27-006"
+    ],
+    "T1055": [
+      "04-001",
+      "04-002",
+      "04-003",
+      "04-004",
+      "05-001",
+      "05-003",
+      "05-004",
+      "05-002",
+      "08-004",
+      "08-003",
+      "08-001",
+      "08-002",
+      "28-002",
+      "30-002"
+    ],
+    "T1003": [
+      "04-001",
+      "04-002",
+      "04-003",
+      "04-004",
+      "05-001",
+      "05-003",
+      "05-004",
+      "05-002",
+      "30-003",
+      "30-002",
+      "30-001",
+      "32-004"
+    ],
+    "T1555": [
+      "05-001",
+      "05-003",
+      "05-004",
+      "05-002",
+      "32-002"
+    ],
+    "T1021": [
+      "05-001",
+      "05-003",
+      "05-004",
+      "05-002",
+      "06-001",
+      "06-002",
+      "06-003"
+    ],
+    "T1570": [
+      "06-001",
+      "06-002",
+      "06-003"
+    ],
+    "T1080": [
+      "06-001",
+      "06-002",
+      "06-003"
+    ],
+    "T1550": [
+      "06-001",
+      "06-002",
+      "06-003",
+      "32-004",
+      "32-003",
+      "32-001",
+      "34-002",
+      "34-001",
+      "36-003",
+      "36-001"
+    ],
+    "T1543": [
+      "07-005",
+      "07-004",
+      "07-002",
+      "07-001",
+      "07-003",
+      "15-008",
+      "30-004"
+    ],
+    "T1547": [
+      "07-005",
+      "07-004",
+      "07-002",
+      "07-001",
+      "07-003"
+    ],
+    "T1136": [
+      "07-005",
+      "07-004",
+      "07-002",
+      "07-001",
+      "07-003"
+    ],
+    "T1053": [
+      "07-005",
+      "07-004",
+      "07-002",
+      "07-001",
+      "07-003"
+    ],
+    "T1070": [
+      "08-004",
+      "08-003",
+      "08-001",
+      "08-002",
+      "15-008",
+      "30-003"
+    ],
+    "T1562": [
+      "08-004",
+      "08-003",
+      "08-001",
+      "08-002",
+      "15-001",
+      "15-003",
+      "15-004",
+      "15-005",
+      "15-006",
+      "15-011",
+      "15-013",
+      "24-004",
+      "24-003",
+      "24-001",
+      "24-002",
+      "24-005",
+      "27-003",
+      "27-004",
+      "27-005",
+      "27-001",
+      "27-002",
+      "27-006",
+      "37-001",
+      "37-003"
+    ],
+    "T1027": [
+      "08-004",
+      "08-003",
+      "08-001",
+      "08-002"
+    ],
+    "T1475": [
+      "10-001",
+      "10-002",
+      "37-004"
+    ],
+    "T1514": [
+      "10-001",
+      "10-002",
+      "37-004"
+    ],
+    "T1529": [
+      "10-001",
+      "10-002",
+      "37-004"
+    ],
+    "T1204": [
+      "10-001",
+      "10-002",
+      "13-001",
+      "13-002",
+      "13-003",
+      "23-005",
+      "23-003",
+      "23-002",
+      "23-004",
+      "23-001",
+      "33-001",
+      "37-004"
+    ],
+    "T1559": [
+      "11-001",
+      "21-002",
+      "21-001",
+      "21-004",
+      "21-006",
+      "21-005",
+      "21-003"
+    ],
+    "T1465": [
+      "11-001",
+      "21-002",
+      "21-001",
+      "21-004",
+      "21-006",
+      "21-005",
+      "21-003"
+    ],
+    "T1059.003": [
+      "12-010"
+    ],
+    "T1059.006": [
+      "12-011"
+    ],
+    "T1036": [
+      "13-001",
+      "13-002",
+      "13-003"
+    ],
+    "T1486": [
+      "15-001",
+      "15-003",
+      "15-004",
+      "15-005",
+      "15-006",
+      "15-011",
+      "15-013",
+      "38-002",
+      "38-001",
+      "38-003"
+    ],
+    "T1490": [
+      "15-001",
+      "15-003",
+      "15-004",
+      "15-005",
+      "15-006",
+      "15-011",
+      "15-013",
+      "38-002",
+      "38-001",
+      "38-003"
+    ],
+    "T1485": [
+      "15-001",
+      "15-003",
+      "15-004",
+      "15-005",
+      "15-006",
+      "15-011",
+      "15-013",
+      "38-002",
+      "38-001"
+    ],
+    "T1078": [
+      "15-008",
+      "28-002",
+      "32-002",
+      "32-003",
+      "32-001",
+      "36-003",
+      "36-001"
+    ],
+    "T1525": [
+      "17-001",
+      "17-002",
+      "17-003",
+      "17-004",
+      "17-005",
+      "17-006",
+      "17-008",
+      "17-007",
+      "25-001",
+      "25-003",
+      "25-006",
+      "25-005",
+      "25-002",
+      "33-002",
+      "33-003",
+      "33-004",
+      "33-001"
+    ],
+    "T1613": [
+      "17-001",
+      "17-002",
+      "17-003",
+      "17-004",
+      "17-005",
+      "17-006",
+      "17-008",
+      "17-007",
+      "32-003",
+      "33-002",
+      "34-003"
+    ],
+    "T1537": [
+      "17-001",
+      "17-002",
+      "17-003",
+      "17-004",
+      "17-005",
+      "17-006",
+      "17-008",
+      "17-007"
+    ],
+    "T0843": [
+      "19-002",
+      "19-001",
+      "19-006",
+      "19-004",
+      "19-005",
+      "19-003"
+    ],
+    "T0839": [
+      "19-002",
+      "19-001",
+      "19-006",
+      "19-004",
+      "19-005",
+      "19-003"
+    ],
+    "T0881": [
+      "19-002",
+      "19-001",
+      "19-006",
+      "19-004",
+      "19-005",
+      "19-003"
+    ],
+    "T0855": [
+      "19-002",
+      "19-001",
+      "19-006",
+      "19-004",
+      "19-005",
+      "19-003"
+    ],
+    "T1524": [
+      "21-002",
+      "21-001",
+      "21-004",
+      "21-006",
+      "21-005",
+      "21-003"
+    ],
+    "T1530": [
+      "22-002",
+      "22-004",
+      "22-001",
+      "22-005",
+      "22-003",
+      "22-006"
+    ],
+    "T1048": [
+      "22-002",
+      "22-004",
+      "22-001",
+      "22-005",
+      "22-003",
+      "22-006"
+    ],
+    "T1567": [
+      "22-002",
+      "22-004",
+      "22-001",
+      "22-005",
+      "22-003",
+      "22-006"
+    ],
+    "T1566": [
+      "23-005",
+      "23-003",
+      "23-002",
+      "23-004",
+      "23-001",
+      "30-005"
+    ],
+    "T1598": [
+      "23-005",
+      "23-003",
+      "23-002",
+      "23-004",
+      "23-001"
+    ],
+    "T1195": [
+      "25-001",
+      "25-003",
+      "25-006",
+      "25-005",
+      "25-002"
+    ],
+    "T1552": [
+      "27-003",
+      "27-004",
+      "27-005",
+      "27-001",
+      "27-002",
+      "27-006",
+      "30-001",
+      "35-002",
+      "35-003"
+    ],
+    "all": [
+      "28-003"
+    ],
+    "T1059": [
+      "28-002",
+      "30-004",
+      "37-001",
+      "37-002"
+    ],
+    "T1134": [
+      "28-002"
+    ],
+    "T1569": [
+      "28-002",
+      "32-002"
+    ],
+    "T1046": [
+      "28-001",
+      "31-001",
+      "36-002"
+    ],
+    "T1057": [
+      "28-001"
+    ],
+    "T1082": [
+      "28-001",
+      "31-001"
+    ],
+    "T1087": [
+      "28-001"
+    ],
+    "T1482": [
+      "28-001"
+    ],
+    "T1041": [
+      "28-004",
+      "29-004"
+    ],
+    "T1071": [
+      "28-004",
+      "29-004",
+      "30-003",
+      "30-002",
+      "30-005",
+      "31-001",
+      "34-003",
+      "34-001",
+      "37-001"
+    ],
+    "T1095": [
+      "28-004"
+    ],
+    "T1571": [
+      "28-004"
+    ],
+    "T1572": [
+      "28-004"
+    ],
+    "T1587": [
+      "29-003",
+      "31-003",
+      "35-002",
+      "35-001",
+      "35-003"
+    ],
+    "T1588": [
+      "29-003",
+      "31-003",
+      "35-002"
+    ],
+    "T1593": [
+      "29-003",
+      "34-001"
+    ],
+    "T1594": [
+      "29-003"
+    ],
+    "T1583": [
+      "29-002",
+      "29-001"
+    ],
+    "T1597": [
+      "29-002",
+      "29-001"
+    ],
+    "T1584": [
+      "29-001"
+    ],
+    "T1568": [
+      "29-004"
+    ],
+    "T1573": [
+      "29-004",
+      "35-001",
+      "35-003"
+    ],
+    "T1546": [
+      "30-004",
+      "30-003",
+      "37-001",
+      "37-002"
+    ],
+    "T1554": [
+      "30-004"
+    ],
+    "T1564": [
+      "30-003",
+      "30-002",
+      "37-001",
+      "37-002",
+      "37-003"
+    ],
+    "T1114": [
+      "30-005"
+    ],
+    "T1557": [
+      "30-005",
+      "36-002",
+      "36-001"
+    ],
+    "T1560": [
+      "30-001",
+      "31-001"
+    ],
+    "T1580": [
+      "31-001",
+      "31-002",
+      "31-003"
+    ],
+    "T1585": [
+      "31-002"
+    ],
+    "T1586": [
+      "31-002"
+    ],
+    "T1207": [
+      "32-004"
+    ],
+    "T1484": [
+      "32-004"
+    ],
+    "T1611": [
+      "32-004",
+      "33-003",
+      "33-004"
+    ],
+    "T1556": [
+      "32-002",
+      "32-001",
+      "34-002",
+      "36-003"
+    ],
+    "T1528": [
+      "32-003",
+      "32-001",
+      "34-002"
+    ],
+    "T1578": [
+      "33-002",
+      "33-003",
+      "33-004",
+      "33-001",
+      "34-003"
+    ],
+    "T1610": [
+      "33-002",
+      "33-003",
+      "33-004",
+      "33-001"
+    ],
+    "T1606": [
+      "34-002"
+    ],
+    "T1608": [
+      "35-002",
+      "35-001",
+      "35-003"
+    ],
+    "T1090": [
+      "36-002"
+    ],
+    "T1218": [
+      "37-002"
+    ],
+    "T1620": [
+      "37-002"
+    ],
+    "T1561": [
+      "38-001"
+    ]
+  },
+  "categories": {},
+  "skills": [
+    {
+      "id": "01-001",
+      "title": "🌐 DNS枚举 (DNS Enumeration)",
+      "path": ".\\01-信息搜集-Reconnaissance\\skills\\DNS枚举-DNSEnumeration.md",
+      "mitre_attack": [
+        "T1595",
+        "T1592",
+        "T1590",
+        "T1596"
+      ]
+    },
+    {
+      "id": "01-002",
+      "title": "🎯 主动信息搜集 (Active Reconnaissance)",
+      "path": ".\\01-信息搜集-Reconnaissance\\skills\\主动信息搜集-ActiveRecon.md",
+      "mitre_attack": [
+        "T1595",
+        "T1592",
+        "T1590",
+        "T1596"
+      ]
+    },
+    {
+      "id": "01-003",
+      "title": "🔗 子域名探测 (Subdomain Discovery)",
+      "path": ".\\01-信息搜集-Reconnaissance\\skills\\子域名探测-SubdomainDiscovery.md",
+      "mitre_attack": [
+        "T1595",
+        "T1592",
+        "T1590",
+        "T1596"
+      ]
+    },
+    {
+      "id": "01-004",
+      "title": "🖥️ 目标技术栈识别 (Technology Stack Fingerprinting)",
+      "path": ".\\01-信息搜集-Reconnaissance\\skills\\目标技术栈识别-TechStackFingerprint.md",
+      "mitre_attack": [
+        "T1595",
+        "T1592",
+        "T1590",
+        "T1596"
+      ]
+    },
+    {
+      "id": "01-005",
+      "title": "👥 社会工程学信息收集 (Social Engineering Information Gathering)",
+      "path": ".\\01-信息搜集-Reconnaissance\\skills\\社会工程学信息-SocialEngineeringInfo.md",
+      "mitre_attack": [
+        "T1595",
+        "T1592",
+        "T1590",
+        "T1596"
+      ]
+    },
+    {
+      "id": "01-006",
+      "title": "🌍 网络空间搜索引擎 (Cyberspace Search Engine)",
+      "path": ".\\01-信息搜集-Reconnaissance\\skills\\网络空间搜索引擎-OSINT-SearchEngine.md",
+      "mitre_attack": [
+        "T1595",
+        "T1592",
+        "T1590",
+        "T1596"
+      ]
+    },
+    {
+      "id": "01-007",
+      "title": "🕵️ 被动信息搜集 (Passive Reconnaissance / OSINT)",
+      "path": ".\\01-信息搜集-Reconnaissance\\skills\\被动信息搜集-PassiveRecon.md",
+      "mitre_attack": [
+        "T1595",
+        "T1592",
+        "T1590",
+        "T1596"
+      ]
+    },
+    {
+      "id": "02-001",
+      "title": "🤖 AI Agent漏洞扫描 (AI Agent Vulnerability Scanning)",
+      "path": ".\\02-漏洞扫描-VulnerabilityScanning\\skills\\AI代理漏洞扫描-AIAgentVulnScan.md",
+      "mitre_attack": [
+        "T1595",
+        "T1589",
+        "T1592"
+      ]
+    },
+    {
+      "id": "02-003",
+      "title": "📡 Web漏洞扫描 (Web Vulnerability Scanning)",
+      "path": ".\\02-漏洞扫描-VulnerabilityScanning\\skills\\Web漏洞扫描-WebVulnScan.md",
+      "mitre_attack": [
+        "T1595",
+        "T1589",
+        "T1592"
+      ]
+    },
+    {
+      "id": "02-004",
+      "title": "🗄️ 数据库安全评估 (Database Security Assessment)",
+      "path": ".\\02-漏洞扫描-VulnerabilityScanning\\skills\\数据库安全评估-DatabaseAssessment.md",
+      "mitre_attack": [
+        "T1595",
+        "T1589",
+        "T1592"
+      ]
+    },
+    {
+      "id": "02-005",
+      "title": "🤖 漏洞扫描器自动化 (Vulnerability Scanner Automation)",
+      "path": ".\\02-漏洞扫描-VulnerabilityScanning\\skills\\漏洞扫描器自动化-VulnScannerAutomation.md",
+      "mitre_attack": [
+        "T1595",
+        "T1589",
+        "T1592"
+      ]
+    },
+    {
+      "id": "02-006",
+      "title": "🌐 网络漏洞扫描 (Network Vulnerability Scanning)",
+      "path": ".\\02-漏洞扫描-VulnerabilityScanning\\skills\\网络漏洞扫描-NetworkVulnScan.md",
+      "mitre_attack": [
+        "T1595",
+        "T1589",
+        "T1592"
+      ]
+    },
+    {
+      "id": "02-007",
+      "title": "🔧 配置审计扫描 (Configuration Audit Scanning)",
+      "path": ".\\02-漏洞扫描-VulnerabilityScanning\\skills\\配置审计扫描-ConfigAuditScan.md",
+      "mitre_attack": [
+        "T1595",
+        "T1589",
+        "T1592"
+      ]
+    },
+    {
+      "id": "03-001",
+      "title": "🤖 AI Agent漏洞利用 (AI Agent Exploitation)",
+      "path": ".\\03-漏洞利用-Exploitation\\skills\\AI代理漏洞利用-AIAgentExploitation.md",
+      "mitre_attack": [
+        "T1190",
+        "T1505",
+        "T1203",
+        "T1210"
+      ]
+    },
+    {
+      "id": "03-002",
+      "title": "💀 Metasploit框架利用 (Metasploit Framework Exploitation)",
+      "path": ".\\03-漏洞利用-Exploitation\\skills\\Metasploit框架利用-Metasploit.md",
+      "mitre_attack": [
+        "T1190",
+        "T1505",
+        "T1203",
+        "T1210"
+      ]
+    },
+    {
+      "id": "03-003",
+      "title": "💉 SQL注入利用 (SQL Injection Exploitation)",
+      "path": ".\\03-漏洞利用-Exploitation\\skills\\SQL注入利用-SQLInjection.md",
+      "mitre_attack": [
+        "T1190",
+        "T1505",
+        "T1203",
+        "T1210"
+      ]
+    },
+    {
+      "id": "03-004",
+      "title": "🔗 SSRF - 服务端请求伪造 (Server-Side Request Forgery)",
+      "path": ".\\03-漏洞利用-Exploitation\\skills\\SSRF服务端请求伪造-SSRF.md",
+      "mitre_attack": [
+        "T1190",
+        "T1505",
+        "T1203",
+        "T1210"
+      ]
+    },
+    {
+      "id": "03-005",
+      "title": "🌐 Web漏洞利用 (Web Exploitation)",
+      "path": ".\\03-漏洞利用-Exploitation\\skills\\Web漏洞利用-WebExploitation.md",
+      "mitre_attack": [
+        "T1190",
+        "T1505",
+        "T1203",
+        "T1210"
+      ]
+    },
+    {
+      "id": "03-006",
+      "title": "⚡ XSS跨站脚本攻击 (Cross-Site Scripting Exploitation)",
+      "path": ".\\03-漏洞利用-Exploitation\\skills\\XSS跨站脚本-XSSExploitation.md",
+      "mitre_attack": [
+        "T1190",
+        "T1505",
+        "T1203",
+        "T1210"
+      ]
+    },
+    {
+      "id": "03-007",
+      "title": "⌨️ 命令注入 (Command Injection)",
+      "path": ".\\03-漏洞利用-Exploitation\\skills\\命令注入-CommandInjection.md",
+      "mitre_attack": [
+        "T1190",
+        "T1505",
+        "T1203",
+        "T1210"
+      ]
+    },
+    {
+      "id": "03-008",
+      "title": "📂 文件包含与上传利用 (File Inclusion & Upload Exploitation)",
+      "path": ".\\03-漏洞利用-Exploitation\\skills\\文件包含利用-FileInclusion.md",
+      "mitre_attack": [
+        "T1190",
+        "T1505",
+        "T1203",
+        "T1210"
+      ]
+    },
+    {
+      "id": "03-009",
+      "title": "🔐 认证绕过与权限绕过 (Authentication Bypass & Authorization Bypass)",
+      "path": ".\\03-漏洞利用-Exploitation\\skills\\认证绕过-AuthBypass.md",
+      "mitre_attack": [
+        "T1190",
+        "T1505",
+        "T1203",
+        "T1210"
+      ]
+    },
+    {
+      "id": "04-001",
+      "title": "🐧 Linux权限提升 (Linux Privilege Escalation)",
+      "path": ".\\04-权限提升-PrivilegeEscalation\\skills\\Linux提权-LinuxPrivEsc.md",
+      "mitre_attack": [
+        "T1068",
+        "T1548",
+        "T1055",
+        "T1003"
+      ]
+    },
+    {
+      "id": "04-002",
+      "title": "🪟 Windows权限提升 (Windows Privilege Escalation)",
+      "path": ".\\04-权限提升-PrivilegeEscalation\\skills\\Windows提权-WindowsPrivEsc.md",
+      "mitre_attack": [
+        "T1068",
+        "T1548",
+        "T1055",
+        "T1003"
+      ]
+    },
+    {
+      "id": "04-003",
+      "title": "⬆️ 内核漏洞与服务配置错误提权 (Kernel Exploit & Service Misconfig PrivEsc)",
+      "path": ".\\04-权限提升-PrivilegeEscalation\\skills\\内核漏洞与服务配置错误提权-KernelServicePrivEsc.md",
+      "mitre_attack": [
+        "T1068",
+        "T1548",
+        "T1055",
+        "T1003"
+      ]
+    },
+    {
+      "id": "04-004",
+      "title": "🔑 凭证窃取与利用 (Credential Theft & Exploitation)",
+      "path": ".\\04-权限提升-PrivilegeEscalation\\skills\\凭证窃取与利用-CredentialTheft.md",
+      "mitre_attack": [
+        "T1068",
+        "T1548",
+        "T1055",
+        "T1003"
+      ]
+    },
+    {
+      "id": "05-001",
+      "title": "🕵️ 后渗透信息收集与数据窃取 (Post-Exploitation Info Gathering & Data Exfil)",
+      "path": ".\\05-后渗透-PostExploitation\\skills\\信息收集与数据窃取-InfoGatheringDataExfil.md",
+      "mitre_attack": [
+        "T1003",
+        "T1555",
+        "T1055",
+        "T1021"
+      ]
+    },
+    {
+      "id": "05-003",
+      "title": "🔑 凭证转储与哈希传递 (Credential Dumping & Pass-the-Hash)",
+      "path": ".\\05-后渗透-PostExploitation\\skills\\凭证转储与哈希传递-CredentialDumpingPtH.md",
+      "mitre_attack": [
+        "T1003",
+        "T1555",
+        "T1055",
+        "T1021"
+      ]
+    },
+    {
+      "id": "05-004",
+      "title": "🖥️ 远程控制与交互式Shell (Remote Control & Interactive Shell)",
+      "path": ".\\05-后渗透-PostExploitation\\skills\\远程控制与交互式Shell-RemoteControlShell.md",
+      "mitre_attack": [
+        "T1003",
+        "T1555",
+        "T1055",
+        "T1021"
+      ]
+    },
+    {
+      "id": "05-002",
+      "title": "⌨️ 键盘记录与屏幕捕获 (Keylogging & Screen Capture)",
+      "path": ".\\05-后渗透-PostExploitation\\skills\\键盘记录与屏幕捕获-KeyloggingScreenCapture.md",
+      "mitre_attack": [
+        "T1003",
+        "T1555",
+        "T1055",
+        "T1021"
+      ]
+    },
+    {
+      "id": "06-001",
+      "title": "🔁 PsExec与WMI远程执行 (PsExec & WMI Remote Execution)",
+      "path": ".\\06-横向移动-LateralMovement\\skills\\PsExec与WMI远程执行-PsExecWMI.md",
+      "mitre_attack": [
+        "T1021",
+        "T1570",
+        "T1080",
+        "T1550"
+      ]
+    },
+    {
+      "id": "06-002",
+      "title": "🔗 内网代理与隧道 (Internal Proxy & Tunneling)",
+      "path": ".\\06-横向移动-LateralMovement\\skills\\内网代理与隧道-InternalProxyTunnel.md",
+      "mitre_attack": [
+        "T1021",
+        "T1570",
+        "T1080",
+        "T1550"
+      ]
+    },
+    {
+      "id": "06-003",
+      "title": "🔄 横向移动 (Lateral Movement)",
+      "path": ".\\06-横向移动-LateralMovement\\skills\\横向移动-LateralMovement.md",
+      "mitre_attack": [
+        "T1021",
+        "T1570",
+        "T1080",
+        "T1550"
+      ]
+    },
+    {
+      "id": "07-005",
+      "title": "Bootkit与固件持久化 (Bootkit & Firmware Persistence)",
+      "path": ".\\07-持久化-Persistence\\skills\\Bootkit与固件持久化-BootkitFirmwarePersistence.md",
+      "mitre_attack": [
+        "T1543",
+        "T1547",
+        "T1136",
+        "T1053"
+      ]
+    },
+    {
+      "id": "07-004",
+      "title": "Office应用程序持久化 (Office Application Persistence)",
+      "path": ".\\07-持久化-Persistence\\skills\\Office应用程序持久化-OfficePersistence.md",
+      "mitre_attack": [
+        "T1543",
+        "T1547",
+        "T1136",
+        "T1053"
+      ]
+    },
+    {
+      "id": "07-002",
+      "title": "启动项与登录自动执行 (Boot/Logon Autostart)",
+      "path": ".\\07-持久化-Persistence\\skills\\启动项与登录自动执行-BootLogonAutostart.md",
+      "mitre_attack": [
+        "T1543",
+        "T1547",
+        "T1136",
+        "T1053"
+      ]
+    },
+    {
+      "id": "07-001",
+      "title": "🔐 持久化 - 长期控制 (Persistence - Long-term Access)",
+      "path": ".\\07-持久化-Persistence\\skills\\持久化-Persistence.md",
+      "mitre_attack": [
+        "T1543",
+        "T1547",
+        "T1136",
+        "T1053"
+      ]
+    },
+    {
+      "id": "07-003",
+      "title": "账户创建与凭证持久化 (Account Persistence)",
+      "path": ".\\07-持久化-Persistence\\skills\\账户持久化-AccountPersistence.md",
+      "mitre_attack": [
+        "T1543",
+        "T1547",
+        "T1136",
+        "T1053"
+      ]
+    },
+    {
+      "id": "08-004",
+      "title": "AMSI绕过与EDR规避 (AMSI Bypass & EDR Evasion)",
+      "path": ".\\08-痕迹清除-CoveringTracks\\skills\\AMSI绕过与EDR规避-AMSIByPassEDREvasion.md",
+      "mitre_attack": [
+        "T1070",
+        "T1562",
+        "T1055",
+        "T1027"
+      ]
+    },
+    {
+      "id": "08-003",
+      "title": "代码混淆与反分析 (Code Obfuscation & Anti-Analysis)",
+      "path": ".\\08-痕迹清除-CoveringTracks\\skills\\代码混淆与反分析-ObfuscationAntiAnalysis.md",
+      "mitre_attack": [
+        "T1070",
+        "T1562",
+        "T1055",
+        "T1027"
+      ]
+    },
+    {
+      "id": "08-001",
+      "title": "🧹 痕迹清除 (Covering Tracks / Anti-Forensics)",
+      "path": ".\\08-痕迹清除-CoveringTracks\\skills\\痕迹清除-CoveringTracks.md",
+      "mitre_attack": [
+        "T1070",
+        "T1562",
+        "T1055",
+        "T1027"
+      ]
+    },
+    {
+      "id": "08-002",
+      "title": "进程注入与代码注入 (Process Injection & Code Injection)",
+      "path": ".\\08-痕迹清除-CoveringTracks\\skills\\进程注入与代码注入-ProcessInjection.md",
+      "mitre_attack": [
+        "T1070",
+        "T1562",
+        "T1055",
+        "T1027"
+      ]
+    },
+    {
+      "id": "09-001",
+      "title": "🌐 安全报告模板 - HTML格式 (Security Report Template - HTML)",
+      "path": ".\\09-报告撰写-Reporting\\skills\\安全报告模板-HTML.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "09-002",
+      "title": "📄 安全报告模板 - Markdown格式 (Security Report Template - Markdown)",
+      "path": ".\\09-报告撰写-Reporting\\skills\\安全报告模板-Markdown.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "09-003",
+      "title": "📝 安全报告模板 - Word/PDF格式 (Security Report Template - Word/PDF)",
+      "path": ".\\09-报告撰写-Reporting\\skills\\安全报告模板-Word.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "09-004",
+      "title": "📝 渗透测试报告编写 (Penetration Test Report Writing)",
+      "path": ".\\09-报告撰写-Reporting\\skills\\报告编写-PentestReport.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "09-005",
+      "title": "📊 漏洞评级与CVSS评分 (Vulnerability Rating & CVSS Scoring)",
+      "path": ".\\09-报告撰写-Reporting\\skills\\漏洞评级与CVSS-VulnRatingCVSS.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "10-001",
+      "title": "📱 Android安全测试 (Android Security Testing)",
+      "path": ".\\10-移动安全-MobileSecurity\\skills\\Android安全测试-AndroidSecurityTest.md",
+      "mitre_attack": [
+        "T1475",
+        "T1514",
+        "T1529",
+        "T1204"
+      ]
+    },
+    {
+      "id": "10-002",
+      "title": "🍎 iOS安全测试 (iOS Security Testing)",
+      "path": ".\\10-移动安全-MobileSecurity\\skills\\iOS安全测试-iOSSecurityTest.md",
+      "mitre_attack": [
+        "T1475",
+        "T1514",
+        "T1529",
+        "T1204"
+      ]
+    },
+    {
+      "id": "11-001",
+      "title": "📶 Wi-Fi安全审计 (Wi-Fi Security Audit)",
+      "path": ".\\11-无线安全-WirelessSecurity\\skills\\WiFi安全审计-WiFiSecurityAudit.md",
+      "mitre_attack": [
+        "T1559",
+        "T1465"
+      ]
+    },
+    {
+      "id": "12-001",
+      "title": "🤖 AI Agent代码审计 (AI Agent Code Audit)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\AI Agent代码审计-AIAgentCodeAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "12-002",
+      "title": "🔧 C++代码审计 (C++ Code Audit)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\C++代码审计-CPPCodeAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "12-003",
+      "title": "⚙️ C代码审计 (C Code Audit)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\C代码审计-CCodeAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "12-004",
+      "title": "🐹 Go代码审计 (Go Code Audit)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\Go代码审计-GoCodeAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "12-005",
+      "title": "🌐 JavaScript/Node.js代码审计 (JavaScript & Node.js Code Audit)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\JavaScript代码审计-JSCodeAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "12-006",
+      "title": "☕ Java代码审计 (Java Code Audit)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\Java代码审计-JavaCodeAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "12-010",
+      "title": "☕ Java 代码审计进阶 (Java Audit Advanced)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\Java代码审计进阶-JavaAuditAdvanced.md",
+      "mitre_attack": [
+        "T1059.003",
+        "T1190"
+      ]
+    },
+    {
+      "id": "12-007",
+      "title": "🔍 PHP代码审计 (PHP Code Audit)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\PHP代码审计-PHPCodeAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "12-011",
+      "title": "🐘 PHP 代码审计专业版 (PHP Code Audit Pro)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\PHP代码审计专业版-PHPAuditPro.md",
+      "mitre_attack": [
+        "T1059.006",
+        "T1190"
+      ]
+    },
+    {
+      "id": "12-008",
+      "title": "🐍 Python代码审计 (Python Code Audit)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\Python代码审计-PythonCodeAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "12-009",
+      "title": "🦀 Rust代码审计 (Rust Code Audit)",
+      "path": ".\\12-代码审计-CodeAudit\\skills\\Rust代码审计-RustCodeAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "13-001",
+      "title": "⚙️ 动态调试分析 (Dynamic Debug Analysis)",
+      "path": ".\\13-逆向工程-ReverseEngineering\\skills\\动态调试分析-DynamicDebugAnalysis.md",
+      "mitre_attack": [
+        "T1204",
+        "T1036"
+      ]
+    },
+    {
+      "id": "13-002",
+      "title": "🦠 恶意软件分析 (Malware Analysis)",
+      "path": ".\\13-逆向工程-ReverseEngineering\\skills\\恶意软件分析-MalwareAnalysis.md",
+      "mitre_attack": [
+        "T1204",
+        "T1036"
+      ]
+    },
+    {
+      "id": "13-003",
+      "title": "🔬 静态逆向分析 (Static Reverse Engineering)",
+      "path": ".\\13-逆向工程-ReverseEngineering\\skills\\静态逆向分析-StaticReverseAnalysis.md",
+      "mitre_attack": [
+        "T1204",
+        "T1036"
+      ]
+    },
+    {
+      "id": "14-001",
+      "title": "🤖 AI Agent安全审计 (AI Agent Security Audit)",
+      "path": ".\\14-安全审计-SecurityAudit\\skills\\AI Agent安全审计-AIAgentSecurityAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "14-002",
+      "title": "☁️ 云安全审计 (Cloud Security Audit)",
+      "path": ".\\14-安全审计-SecurityAudit\\skills\\云安全审计-CloudSecurityAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "14-003",
+      "title": "🏗️ 安全架构审计 (Security Architecture Audit)",
+      "path": ".\\14-安全审计-SecurityAudit\\skills\\安全架构审计-SecurityArchitectureAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "14-004",
+      "title": "🐳 容器安全审计 (Container Security Audit)",
+      "path": ".\\14-安全审计-SecurityAudit\\skills\\容器安全审计-ContainerSecurityAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "14-005",
+      "title": "🏛️ 等级保护合规审计 (Classified Protection Compliance Audit)",
+      "path": ".\\14-安全审计-SecurityAudit\\skills\\等级保护合规审计-ClassifiedProtectionAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "14-006",
+      "title": "🌐 网络安全合规评估 (Network Security Compliance Assessment)",
+      "path": ".\\14-安全审计-SecurityAudit\\skills\\网络安全合规评估-NetworkComplianceAssessment.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "14-007",
+      "title": "🔧 配置安全审计 (Configuration Security Audit)",
+      "path": ".\\14-安全审计-SecurityAudit\\skills\\配置安全审计-ConfigSecurityAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "15-001",
+      "title": "🤖 AI安全应急响应 (AI Security Incident Response)",
+      "path": ".\\15-应急响应-IncidentResponse\\skills\\AI安全应急响应-AISecurityIncidentResponse.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1485",
+        "T1562"
+      ]
+    },
+    {
+      "id": "15-008",
+      "title": "🔫 Linux 应急响应 AI 检查 (LinuxGun AI Response)",
+      "path": ".\\15-应急响应-IncidentResponse\\skills\\Linux应急响应AI检查-LinuxGun.md",
+      "mitre_attack": [
+        "T1070",
+        "T1078",
+        "T1543"
+      ]
+    },
+    {
+      "id": "15-003",
+      "title": "📋 事件分类与优先级评估 (Incident Triage & Prioritization)",
+      "path": ".\\15-应急响应-IncidentResponse\\skills\\事件分类与优先级评估-IncidentTriage.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1485",
+        "T1562"
+      ]
+    },
+    {
+      "id": "15-004",
+      "title": "📝 事件复盘与报告 (Lessons Learned & Reporting)",
+      "path": ".\\15-应急响应-IncidentResponse\\skills\\事件复盘与报告-LessonsLearnedReporting.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1485",
+        "T1562"
+      ]
+    },
+    {
+      "id": "15-005",
+      "title": "🛑 事件遏制与清除 (Containment & Eradication)",
+      "path": ".\\15-应急响应-IncidentResponse\\skills\\事件遏制与清除-ContainmentEradication.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1485",
+        "T1562"
+      ]
+    },
+    {
+      "id": "15-006",
+      "title": "☁️ 云环境应急响应 (Cloud Incident Response)",
+      "path": ".\\15-应急响应-IncidentResponse\\skills\\云环境应急响应-CloudIncidentResponse.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1485",
+        "T1562"
+      ]
+    },
+    {
+      "id": "15-011",
+      "title": "📜 日志收集与分析 (Log Collection & Analysis)",
+      "path": ".\\15-应急响应-IncidentResponse\\skills\\日志收集与分析-LogCollectionAnalysis.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1485",
+        "T1562"
+      ]
+    },
+    {
+      "id": "15-013",
+      "title": "🌐 网络流量分析 (Network Traffic Analysis)",
+      "path": ".\\15-应急响应-IncidentResponse\\skills\\网络流量分析-NetworkTrafficAnalysis.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1485",
+        "T1562"
+      ]
+    },
+    {
+      "id": "16-001",
+      "title": "🔐 AI Agent权限与访问控制 (Agent Authorization & Access Control)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\AI Agent权限与访问控制-AgentAuthorization.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "16-002",
+      "title": "📦 AI供应链安全 (AI Supply Chain Security)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\AI供应链安全-AISupplyChainSecurity.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "16-003",
+      "title": "⚙️ AI应用安全配置审计 (AI Application Security Configuration Audit)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\AI应用安全配置审计-AIAppSecurityConfig.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "16-004",
+      "title": "🧪 LLM提示注入与安全防护 (Prompt Injection & Defense)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\LLM提示注入与安全防护-PromptInjectionDefense.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "16-005",
+      "title": "🔒 LLM数据泄露与隐私保护 (Data Leakage & Privacy Protection)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\LLM数据泄露与隐私保护-DataLeakagePrivacy.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "16-006",
+      "title": "🎨 多模态AI安全 (Multimodal AI Security)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\多模态AI安全-MultimodalAISecurity.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "16-007",
+      "title": "🎯 大模型红队测试 (LLM Red Teaming)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\大模型红队测试-LLMRedTeaming.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "16-008",
+      "title": "🛡️ 模型对抗攻击与防御 (Adversarial Attack & Defense)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\模型对抗攻击与防御-AdversarialAttackDefense.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "16-009",
+      "title": "📝 模型输出安全与幻觉检测 (Output Safety & Hallucination Detection)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\模型输出安全与幻觉检测-OutputSafetyHallucination.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "16-010",
+      "title": "🤝 联邦学习安全 (Federated Learning Security)",
+      "path": ".\\16-大模型安全-LLMSecurity\\skills\\联邦学习安全-FederatedLearningSecurity.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "17-001",
+      "title": "☁️ AWS安全评估 (AWS Security Assessment)",
+      "path": ".\\17-云安全-CloudSecurity\\skills\\AWS安全评估-AWSSecurityAssessment.md",
+      "mitre_attack": [
+        "T1525",
+        "T1613",
+        "T1537"
+      ]
+    },
+    {
+      "id": "17-002",
+      "title": "🌤️ Azure安全评估 (Azure Security Assessment)",
+      "path": ".\\17-云安全-CloudSecurity\\skills\\Azure安全评估-AzureSecurityAssessment.md",
+      "mitre_attack": [
+        "T1525",
+        "T1613",
+        "T1537"
+      ]
+    },
+    {
+      "id": "17-003",
+      "title": "🟢 GCP安全评估 (GCP Security Assessment)",
+      "path": ".\\17-云安全-CloudSecurity\\skills\\GCP安全评估-GCPSecurityAssessment.md",
+      "mitre_attack": [
+        "T1525",
+        "T1613",
+        "T1537"
+      ]
+    },
+    {
+      "id": "17-004",
+      "title": "🔑 云IAM权限与访问控制审计 (Cloud IAM Audit)",
+      "path": ".\\17-云安全-CloudSecurity\\skills\\云IAM权限与访问控制审计-CloudIAMAudit.md",
+      "mitre_attack": [
+        "T1525",
+        "T1613",
+        "T1537"
+      ]
+    },
+    {
+      "id": "17-005",
+      "title": "💾 云存储安全配置审计 (Cloud Storage Security)",
+      "path": ".\\17-云安全-CloudSecurity\\skills\\云存储安全配置审计-CloudStorageSecurity.md",
+      "mitre_attack": [
+        "T1525",
+        "T1613",
+        "T1537"
+      ]
+    },
+    {
+      "id": "17-006",
+      "title": "🌐 云网络与WAF安全 (Cloud Network & WAF Security)",
+      "path": ".\\17-云安全-CloudSecurity\\skills\\云网络与WAF安全-CloudNetworkWAF.md",
+      "mitre_attack": [
+        "T1525",
+        "T1613",
+        "T1537"
+      ]
+    },
+    {
+      "id": "17-008",
+      "title": "🔄 多云安全策略评估 (Multi-Cloud Security Strategy)",
+      "path": ".\\17-云安全-CloudSecurity\\skills\\多云安全策略评估-MultiCloudSecurity.md",
+      "mitre_attack": [
+        "T1525",
+        "T1613",
+        "T1537"
+      ]
+    },
+    {
+      "id": "17-007",
+      "title": "⚡ 无服务器架构安全 (Serverless Security)",
+      "path": ".\\17-云安全-CloudSecurity\\skills\\无服务器架构安全-ServerlessSecurity.md",
+      "mitre_attack": [
+        "T1525",
+        "T1613",
+        "T1537"
+      ]
+    },
+    {
+      "id": "18-001",
+      "title": "🔗 CI/CD管道安全审计 (CI/CD Pipeline Security)",
+      "path": ".\\18-安全开发运维-DevSecOps\\skills\\CI-CD管道安全审计-CICDPipelineSecurity.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "18-004",
+      "title": "🌐 DAST动态应用安全测试 (Dynamic Application Security Testing)",
+      "path": ".\\18-安全开发运维-DevSecOps\\skills\\DAST动态应用安全测试-DAST.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "18-002",
+      "title": "📦 IaC安全扫描 (Infrastructure as Code Security)",
+      "path": ".\\18-安全开发运维-DevSecOps\\skills\\IaC安全扫描-InfrastructureAsCodeSecurity.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "18-003",
+      "title": "🔍 SAST静态应用安全测试 (Static Application Security Testing)",
+      "path": ".\\18-安全开发运维-DevSecOps\\skills\\SAST静态应用安全测试-SAST.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "18-006",
+      "title": "🧠 安全需求与威胁建模 (Security Requirements & Threat Modeling)",
+      "path": ".\\18-安全开发运维-DevSecOps\\skills\\安全需求与威胁建模-ThreatModeling.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "18-005",
+      "title": "🔗 软件供应链安全 (Software Supply Chain Security)",
+      "path": ".\\18-安全开发运维-DevSecOps\\skills\\软件供应链安全-SoftwareSupplyChainSecurity.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "19-002",
+      "title": "🔧 PLC与RTU安全测试 (PLC & RTU Security Testing)",
+      "path": ".\\19-工控安全-ICS-OT-Security\\skills\\PLC与RTU安全测试-PLC-RTU-SecurityTesting.md",
+      "mitre_attack": [
+        "T0843",
+        "T0839",
+        "T0881",
+        "T0855"
+      ]
+    },
+    {
+      "id": "19-001",
+      "title": "⚙️ SCADA系统安全评估 (SCADA System Security Assessment)",
+      "path": ".\\19-工控安全-ICS-OT-Security\\skills\\SCADA系统安全评估-SCADASecurityAssessment.md",
+      "mitre_attack": [
+        "T0843",
+        "T0839",
+        "T0881",
+        "T0855"
+      ]
+    },
+    {
+      "id": "19-006",
+      "title": "🔒 工业防火墙与网络分段 (Industrial Firewall & Segmentation)",
+      "path": ".\\19-工控安全-ICS-OT-Security\\skills\\工业防火墙与网络分段-Industrial-Firewall-Segmentation.md",
+      "mitre_attack": [
+        "T0843",
+        "T0839",
+        "T0881",
+        "T0855"
+      ]
+    },
+    {
+      "id": "19-004",
+      "title": "📋 工控安全合规审计 - IEC 62443 (ICS Compliance Audit - IEC 62443)",
+      "path": ".\\19-工控安全-ICS-OT-Security\\skills\\工控安全合规审计-IEC62443-Audit.md",
+      "mitre_attack": [
+        "T0843",
+        "T0839",
+        "T0881",
+        "T0855"
+      ]
+    },
+    {
+      "id": "19-005",
+      "title": "🚨 工控安全应急预案 (ICS Incident Response)",
+      "path": ".\\19-工控安全-ICS-OT-Security\\skills\\工控安全应急预案-ICS-IncidentResponse.md",
+      "mitre_attack": [
+        "T0843",
+        "T0839",
+        "T0881",
+        "T0855"
+      ]
+    },
+    {
+      "id": "19-003",
+      "title": "🌐 工控网络协议安全 (ICS Network Protocol Security)",
+      "path": ".\\19-工控安全-ICS-OT-Security\\skills\\工控网络协议安全-ICS-NetworkProtocolSecurity.md",
+      "mitre_attack": [
+        "T0843",
+        "T0839",
+        "T0881",
+        "T0855"
+      ]
+    },
+    {
+      "id": "20-002",
+      "title": "💰 DeFi协议安全评估 (DeFi Protocol Security Assessment)",
+      "path": ".\\20-区块链安全-Blockchain-Web3-Security\\skills\\DeFi协议安全评估-DeFiSecurityAssessment.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "20-006",
+      "title": "⚡ MEV与跨链桥安全 (MEV & Cross-Chain Bridge Security)",
+      "path": ".\\20-区块链安全-Blockchain-Web3-Security\\skills\\MEV与跨链桥安全-MEV-CrossChainBridgeSecurity.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "20-004",
+      "title": "🖥️ Web3前端与钱包安全 (Web3 Frontend & Wallet Security)",
+      "path": ".\\20-区块链安全-Blockchain-Web3-Security\\skills\\Web3前端与钱包安全-Web3WalletSecurity.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "20-003",
+      "title": "🔗 共识机制安全分析 (Consensus Mechanism Security)",
+      "path": ".\\20-区块链安全-Blockchain-Web3-Security\\skills\\共识机制安全分析-ConsensusSecurityAnalysis.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "20-005",
+      "title": "🛡️ 区块链节点安全加固 (Blockchain Node Hardening)",
+      "path": ".\\20-区块链安全-Blockchain-Web3-Security\\skills\\区块链节点安全加固-BlockchainNodeHardening.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "20-001",
+      "title": "📝 智能合约安全审计 (Smart Contract Audit)",
+      "path": ".\\20-区块链安全-Blockchain-Web3-Security\\skills\\智能合约安全审计-SmartContractAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "21-002",
+      "title": "📶 BLE/Zigbee/Z-Wave无线安全测试 (Wireless Protocol Security Testing)",
+      "path": ".\\21-物联网安全-IoT-Security\\skills\\BLE-Zigbee-Z-Wave无线安全测试-WirelessProtocolSecurity.md",
+      "mitre_attack": [
+        "T1465",
+        "T1559",
+        "T1524"
+      ]
+    },
+    {
+      "id": "21-001",
+      "title": "🔧 固件逆向与分析 (Firmware Reverse Engineering)",
+      "path": ".\\21-物联网安全-IoT-Security\\skills\\固件逆向与分析-FirmwareReverseEngineering.md",
+      "mitre_attack": [
+        "T1465",
+        "T1559",
+        "T1524"
+      ]
+    },
+    {
+      "id": "21-004",
+      "title": "⚙️ 嵌入式设备硬件安全测试 (Embedded Hardware Security)",
+      "path": ".\\21-物联网安全-IoT-Security\\skills\\嵌入式设备硬件安全测试-EmbeddedHardwareSecurity.md",
+      "mitre_attack": [
+        "T1465",
+        "T1559",
+        "T1524"
+      ]
+    },
+    {
+      "id": "21-006",
+      "title": "🏠 智能家居与车联网安全 (Smart Home & Connected Vehicle Security)",
+      "path": ".\\21-物联网安全-IoT-Security\\skills\\智能家居与车联网安全-SmartHomeConnectedVehicleSecurity.md",
+      "mitre_attack": [
+        "T1465",
+        "T1559",
+        "T1524"
+      ]
+    },
+    {
+      "id": "21-005",
+      "title": "☁️ 物联网平台与云安全 (IoT Platform & Cloud Security)",
+      "path": ".\\21-物联网安全-IoT-Security\\skills\\物联网平台与云安全-IoTPlatformCloudSecurity.md",
+      "mitre_attack": [
+        "T1465",
+        "T1559",
+        "T1524"
+      ]
+    },
+    {
+      "id": "21-003",
+      "title": "🌐 物联网通信协议安全 (IoT Communication Security)",
+      "path": ".\\21-物联网安全-IoT-Security\\skills\\物联网通信协议安全-IoTCommunicationSecurity.md",
+      "mitre_attack": [
+        "T1465",
+        "T1559",
+        "T1524"
+      ]
+    },
+    {
+      "id": "22-002",
+      "title": "🛡️ DLP数据防泄漏策略 (Data Loss Prevention)",
+      "path": ".\\22-数据安全与隐私-DataSecurityPrivacy\\skills\\DLP数据防泄漏策略-DataLossPrevention.md",
+      "mitre_attack": [
+        "T1530",
+        "T1048",
+        "T1567"
+      ]
+    },
+    {
+      "id": "22-004",
+      "title": "🌍 GDPR/个保法合规评估 (Privacy Compliance Assessment)",
+      "path": ".\\22-数据安全与隐私-DataSecurityPrivacy\\skills\\GDPR-个保法合规评估-PrivacyCompliance.md",
+      "mitre_attack": [
+        "T1530",
+        "T1048",
+        "T1567"
+      ]
+    },
+    {
+      "id": "22-001",
+      "title": "📋 数据分类与分级保护 (Data Classification & Grading)",
+      "path": ".\\22-数据安全与隐私-DataSecurityPrivacy\\skills\\数据分类与分级保护-DataClassificationGrading.md",
+      "mitre_attack": [
+        "T1530",
+        "T1048",
+        "T1567"
+      ]
+    },
+    {
+      "id": "22-005",
+      "title": "🗄️ 数据库安全与加密 (Database Security & Encryption)",
+      "path": ".\\22-数据安全与隐私-DataSecurityPrivacy\\skills\\数据库安全与加密-DatabaseSecurityEncryption.md",
+      "mitre_attack": [
+        "T1530",
+        "T1048",
+        "T1567"
+      ]
+    },
+    {
+      "id": "22-003",
+      "title": "🔏 数据脱敏与匿名化 (Data Masking & Anonymization)",
+      "path": ".\\22-数据安全与隐私-DataSecurityPrivacy\\skills\\数据脱敏与匿名化-DataMaskingAnonymization.md",
+      "mitre_attack": [
+        "T1530",
+        "T1048",
+        "T1567"
+      ]
+    },
+    {
+      "id": "22-006",
+      "title": "📝 隐私影响评估(PIA) (Privacy Impact Assessment)",
+      "path": ".\\22-数据安全与隐私-DataSecurityPrivacy\\skills\\隐私影响评估-PIA-PrivacyImpactAssessment.md",
+      "mitre_attack": [
+        "T1530",
+        "T1048",
+        "T1567"
+      ]
+    },
+    {
+      "id": "23-005",
+      "title": "📊 员工安全意识评估 (Security Awareness Assessment)",
+      "path": ".\\23-社会工程学-SocialEngineering\\skills\\员工安全意识评估-SecurityAwarenessAssessment.md",
+      "mitre_attack": [
+        "T1566",
+        "T1598",
+        "T1204"
+      ]
+    },
+    {
+      "id": "23-003",
+      "title": "🏢 物理渗透与社会工程 (Physical Social Engineering)",
+      "path": ".\\23-社会工程学-SocialEngineering\\skills\\物理渗透与社会工程-PhysicalSocialEngineering.md",
+      "mitre_attack": [
+        "T1566",
+        "T1598",
+        "T1204"
+      ]
+    },
+    {
+      "id": "23-002",
+      "title": "📞 电话诈骗与Vishing测试 (Vishing Testing)",
+      "path": ".\\23-社会工程学-SocialEngineering\\skills\\电话诈骗与Vishing测试-VishingTesting.md",
+      "mitre_attack": [
+        "T1566",
+        "T1598",
+        "T1204"
+      ]
+    },
+    {
+      "id": "23-004",
+      "title": "⚙️ 钓鱼基础设施搭建 (Phishing Infrastructure)",
+      "path": ".\\23-社会工程学-SocialEngineering\\skills\\钓鱼基础设施搭建-PhishingInfrastructure.md",
+      "mitre_attack": [
+        "T1566",
+        "T1598",
+        "T1204"
+      ]
+    },
+    {
+      "id": "23-001",
+      "title": "🎣 钓鱼邮件模拟 (Phishing Simulation)",
+      "path": ".\\23-社会工程学-SocialEngineering\\skills\\钓鱼邮件模拟-PhishingSimulation.md",
+      "mitre_attack": [
+        "T1566",
+        "T1598",
+        "T1204"
+      ]
+    },
+    {
+      "id": "24-006",
+      "title": "🤖 Agent 黑客技能集 (Agent Hack Skills)",
+      "path": ".\\24-红蓝对抗-RedBlueTeam\\skills\\Agent黑客技能集-AgentHackSkills.md",
+      "mitre_attack": [
+        "T1595",
+        "T1190",
+        "T1068"
+      ]
+    },
+    {
+      "id": "24-004",
+      "title": "⚡ BAS攻击模拟平台 (Breach & Attack Simulation)",
+      "path": ".\\24-红蓝对抗-RedBlueTeam\\skills\\BAS攻击模拟平台-BreachAttackSimulation.md",
+      "mitre_attack": [
+        "T1595",
+        "T1562"
+      ]
+    },
+    {
+      "id": "24-003",
+      "title": "🟣 紫队协作评估 (Purple Team Exercise)",
+      "path": ".\\24-红蓝对抗-RedBlueTeam\\skills\\紫队协作评估-PurpleTeamExercise.md",
+      "mitre_attack": [
+        "T1595",
+        "T1562"
+      ]
+    },
+    {
+      "id": "24-001",
+      "title": "🔴 红队评估方法论 (Red Team Assessment)",
+      "path": ".\\24-红蓝对抗-RedBlueTeam\\skills\\红队评估方法论-RedTeamAssessment.md",
+      "mitre_attack": [
+        "T1595",
+        "T1562"
+      ]
+    },
+    {
+      "id": "24-002",
+      "title": "🔵 蓝队防御与检测 (Blue Team Defense & Detection)",
+      "path": ".\\24-红蓝对抗-RedBlueTeam\\skills\\蓝队防御与检测-BlueTeamDefense.md",
+      "mitre_attack": [
+        "T1595",
+        "T1562"
+      ]
+    },
+    {
+      "id": "24-005",
+      "title": "🔄 闭环防御改进 (Defense Improvement Cycle)",
+      "path": ".\\24-红蓝对抗-RedBlueTeam\\skills\\闭环防御改进-DefenseImprovementCycle.md",
+      "mitre_attack": [
+        "T1595",
+        "T1562"
+      ]
+    },
+    {
+      "id": "25-001",
+      "title": "📦 SBOM生成与验证 (SBOM Generation & Verification)",
+      "path": ".\\25-供应链安全-SupplyChainSecurity\\skills\\SBOM生成与验证-SBOMGeneration.md",
+      "mitre_attack": [
+        "T1195",
+        "T1525"
+      ]
+    },
+    {
+      "id": "25-003",
+      "title": "📝 代码签名与供应链完整性 (Code Signing & Supply Chain Integrity)",
+      "path": ".\\25-供应链安全-SupplyChainSecurity\\skills\\代码签名与供应链完整性-CodeSigningIntegrity.md",
+      "mitre_attack": [
+        "T1195",
+        "T1525"
+      ]
+    },
+    {
+      "id": "25-006",
+      "title": "🎯 供应链攻击检测与响应 (Supply Chain Attack Detection & Response)",
+      "path": ".\\25-供应链安全-SupplyChainSecurity\\skills\\供应链攻击检测与响应-SupplyChainAttackResponse.md",
+      "mitre_attack": [
+        "T1195",
+        "T1525"
+      ]
+    },
+    {
+      "id": "25-005",
+      "title": "🏢 第三方供应商风险评估 (Third-Party Vendor Risk Assessment)",
+      "path": ".\\25-供应链安全-SupplyChainSecurity\\skills\\第三方供应商风险评估-ThirdPartyVendorRisk.md",
+      "mitre_attack": [
+        "T1195",
+        "T1525"
+      ]
+    },
+    {
+      "id": "25-002",
+      "title": "🔍 软件依赖与开源合规审计 (Dependency License Compliance)",
+      "path": ".\\25-供应链安全-SupplyChainSecurity\\skills\\软件依赖与开源合规审计-DependencyLicenseCompliance.md",
+      "mitre_attack": [
+        "T1195",
+        "T1525"
+      ]
+    },
+    {
+      "id": "26-003",
+      "title": "📊 漏洞优先级与风险评估 (Vulnerability Prioritization & Risk Assessment)",
+      "path": ".\\26-漏洞管理-VulnerabilityManagement\\skills\\漏洞优先级与风险评估-VulnerabilityPrioritization.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "26-004",
+      "title": "🔧 漏洞修复与补丁管理 (Vulnerability Remediation & Patch Management)",
+      "path": ".\\26-漏洞管理-VulnerabilityManagement\\skills\\漏洞修复与补丁管理-VulnerabilityRemediation.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "26-006",
+      "title": "🏆 漏洞奖励计划与安全众测 (Bug Bounty & Crowdsourced Testing)",
+      "path": ".\\26-漏洞管理-VulnerabilityManagement\\skills\\漏洞奖励计划与安全众测-BugBountyCrowdsourcedTesting.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "26-001",
+      "title": "🔍 漏洞情报与CVE查询 (Vulnerability Intelligence & CVE Query)",
+      "path": ".\\26-漏洞管理-VulnerabilityManagement\\skills\\漏洞情报与CVE查询-VulnerabilityIntelligence.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "26-005",
+      "title": "🔄 漏洞生命周期闭环管理 (Vulnerability Lifecycle Management)",
+      "path": ".\\26-漏洞管理-VulnerabilityManagement\\skills\\漏洞生命周期闭环管理-VulnerabilityLifecycle.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "26-002",
+      "title": "🧪 漏洞验证与PoC测试 (Vulnerability Verification & PoC Testing)",
+      "path": ".\\26-漏洞管理-VulnerabilityManagement\\skills\\漏洞验证与PoC测试-VulnerabilityVerification.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "27-003",
+      "title": "Linux安全加固与基线检查 (Linux Hardening & Baseline)",
+      "path": ".\\27-操作系统安全-OSSecurity\\skills\\Linux安全加固与基线检查-LinuxHardeningBaseline.md",
+      "mitre_attack": [
+        "T1548",
+        "T1552",
+        "T1562"
+      ]
+    },
+    {
+      "id": "27-004",
+      "title": "Linux攻击与权限维持技术 (Linux Attack & Persistence)",
+      "path": ".\\27-操作系统安全-OSSecurity\\skills\\Linux攻击与权限维持技术-LinuxAttackPersistence.md",
+      "mitre_attack": [
+        "T1548",
+        "T1552",
+        "T1562"
+      ]
+    },
+    {
+      "id": "27-005",
+      "title": "macOS安全评估与加固 (macOS Security Assessment & Hardening)",
+      "path": ".\\27-操作系统安全-OSSecurity\\skills\\macOS安全评估与加固-macOSSecurityHardening.md",
+      "mitre_attack": [
+        "T1548",
+        "T1552",
+        "T1562"
+      ]
+    },
+    {
+      "id": "27-001",
+      "title": "Windows安全加固与基线检查 (Windows Hardening & Baseline)",
+      "path": ".\\27-操作系统安全-OSSecurity\\skills\\Windows安全加固与基线检查-WindowsHardeningBaseline.md",
+      "mitre_attack": [
+        "T1548",
+        "T1552",
+        "T1562"
+      ]
+    },
+    {
+      "id": "27-002",
+      "title": "Windows攻击与横向移动技术 (Windows Attack & Lateral Movement)",
+      "path": ".\\27-操作系统安全-OSSecurity\\skills\\Windows攻击与横向移动技术-WindowsAttackLateralMovement.md",
+      "mitre_attack": [
+        "T1548",
+        "T1552",
+        "T1562"
+      ]
+    },
+    {
+      "id": "27-006",
+      "title": "国产操作系统安全加固 (Domestic OS Security Hardening)",
+      "path": ".\\27-操作系统安全-OSSecurity\\skills\\国产操作系统安全加固-DomesticOSSecurity.md",
+      "mitre_attack": [
+        "T1548",
+        "T1552",
+        "T1562"
+      ]
+    },
+    {
+      "id": "28-003",
+      "title": "基于ATT&CK的威胁狩猎 (MITRE ATT&CK Threat Hunting)",
+      "path": ".\\28-威胁狩猎-ThreatHunting\\skills\\ATT&CK威胁狩猎-MITREAttackHunting.md",
+      "mitre_attack": [
+        "all"
+      ]
+    },
+    {
+      "id": "28-002",
+      "title": "基于Sigma规则的检测工程 (Sigma Rule Detection Engineering)",
+      "path": ".\\28-威胁狩猎-ThreatHunting\\skills\\Sigma规则检测工程-SigmaRuleEngineering.md",
+      "mitre_attack": [
+        "T1059",
+        "T1055",
+        "T1078",
+        "T1134",
+        "T1569"
+      ]
+    },
+    {
+      "id": "28-001",
+      "title": "威胁狩猎方法论与假设驱动 (Threat Hunting Methodology & Hypothesis)",
+      "path": ".\\28-威胁狩猎-ThreatHunting\\skills\\威胁狩猎方法论-ThreatHuntingMethodology.md",
+      "mitre_attack": [
+        "T1046",
+        "T1057",
+        "T1082",
+        "T1087",
+        "T1482"
+      ]
+    },
+    {
+      "id": "28-004",
+      "title": "网络流量与日志异常检测 (Network Traffic & Log Anomaly Detection)",
+      "path": ".\\28-威胁狩猎-ThreatHunting\\skills\\网络流量与日志异常检测-TrafficLogAnomalyDetection.md",
+      "mitre_attack": [
+        "T1041",
+        "T1071",
+        "T1095",
+        "T1571",
+        "T1572"
+      ]
+    },
+    {
+      "id": "29-003",
+      "title": "APT组织分析与归因 (APT Group Analysis & Attribution)",
+      "path": ".\\29-威胁情报-ThreatIntelligence\\skills\\APT组织分析与归因-APTGroupAnalysisAttribution.md",
+      "mitre_attack": [
+        "T1587",
+        "T1588",
+        "T1593",
+        "T1594"
+      ]
+    },
+    {
+      "id": "29-002",
+      "title": "MISP平台部署与威胁情报共享 (MISP Deployment & Threat Intel Sharing)",
+      "path": ".\\29-威胁情报-ThreatIntelligence\\skills\\MISP部署与威胁情报共享-MISPDeploymentIntelSharing.md",
+      "mitre_attack": [
+        "T1583",
+        "T1597"
+      ]
+    },
+    {
+      "id": "29-001",
+      "title": "威胁情报馈入与TAXII/STIX管理 (Threat Intelligence Feeds & TAXII/STIX)",
+      "path": ".\\29-威胁情报-ThreatIntelligence\\skills\\威胁情报馈入与TAXII-STIX管理-ThreatIntelFeedsTAXIISTIX.md",
+      "mitre_attack": [
+        "T1583",
+        "T1584",
+        "T1595",
+        "T1597"
+      ]
+    },
+    {
+      "id": "29-004",
+      "title": "威胁情报驱动安全运营 (Threat Intel Driven Security Operations)",
+      "path": ".\\29-威胁情报-ThreatIntelligence\\skills\\威胁情报驱动安全运营-ThreatIntelDrivenSOC.md",
+      "mitre_attack": [
+        "T1041",
+        "T1071",
+        "T1568",
+        "T1573"
+      ]
+    },
+    {
+      "id": "30-004",
+      "title": "Linux数字取证分析 (Linux Digital Forensics)",
+      "path": ".\\30-数字取证-DigitalForensics\\skills\\Linux数字取证分析-LinuxDigitalForensics.md",
+      "mitre_attack": [
+        "T1059",
+        "T1505",
+        "T1543",
+        "T1546",
+        "T1554"
+      ]
+    },
+    {
+      "id": "30-003",
+      "title": "Windows数字取证分析 (Windows Digital Forensics)",
+      "path": ".\\30-数字取证-DigitalForensics\\skills\\Windows数字取证分析-WindowsDigitalForensics.md",
+      "mitre_attack": [
+        "T1003",
+        "T1070",
+        "T1071",
+        "T1546",
+        "T1564"
+      ]
+    },
+    {
+      "id": "30-002",
+      "title": "内存取证分析 (Memory Forensics with Volatility)",
+      "path": ".\\30-数字取证-DigitalForensics\\skills\\内存取证分析-Volatility-MemoryForensicsVolatility.md",
+      "mitre_attack": [
+        "T1003",
+        "T1055",
+        "T1071",
+        "T1564"
+      ]
+    },
+    {
+      "id": "30-005",
+      "title": "浏览器与邮件取证 (Browser & Email Forensics)",
+      "path": ".\\30-数字取证-DigitalForensics\\skills\\浏览器与邮件取证-BrowserEmailForensics.md",
+      "mitre_attack": [
+        "T1071",
+        "T1114",
+        "T1557",
+        "T1566"
+      ]
+    },
+    {
+      "id": "30-001",
+      "title": "磁盘镜像与证据获取 (Disk Imaging & Evidence Acquisition)",
+      "path": ".\\30-数字取证-DigitalForensics\\skills\\磁盘镜像与证据获取-DiskImagingEvidenceAcquisition.md",
+      "mitre_attack": [
+        "T1003",
+        "T1552",
+        "T1560"
+      ]
+    },
+    {
+      "id": "31-001",
+      "title": "SIEM告警规则与关联分析 (SIEM Alert Rules & Correlation)",
+      "path": ".\\31-SOC运营-SOCOperations\\skills\\SIEM告警规则与关联分析-SIEMAlertCorrelation.md",
+      "mitre_attack": [
+        "T1046",
+        "T1071",
+        "T1082",
+        "T1560",
+        "T1580"
+      ]
+    },
+    {
+      "id": "31-002",
+      "title": "SOC事件分级与响应流程 (SOC Triage & Response)",
+      "path": ".\\31-SOC运营-SOCOperations\\skills\\SOC事件分级与响应流程-SOCTriageResponse.md",
+      "mitre_attack": [
+        "T1580",
+        "T1585",
+        "T1586",
+        "T1590"
+      ]
+    },
+    {
+      "id": "31-004",
+      "title": "SOC指标与运营效能度量 (SOC Metrics & Operational KPIs)",
+      "path": ".\\31-SOC运营-SOCOperations\\skills\\SOC指标与运营效能度量-SOCMetricsKPIs.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "31-003",
+      "title": "安全自动化与编排 (Security Automation & Orchestration - SOAR)",
+      "path": ".\\31-SOC运营-SOCOperations\\skills\\安全自动化与编排-SOAR-SecurityAutomationOrchestration.md",
+      "mitre_attack": [
+        "T1580",
+        "T1587",
+        "T1588"
+      ]
+    },
+    {
+      "id": "32-004",
+      "title": "AD域安全与攻击路径分析 (AD Security & Attack Path Analysis)",
+      "path": ".\\32-身份访问管理-IAM\\skills\\AD域安全与攻击路径分析-ADSecurityAttackPathAnalysis.md",
+      "mitre_attack": [
+        "T1003",
+        "T1207",
+        "T1484",
+        "T1550",
+        "T1611"
+      ]
+    },
+    {
+      "id": "32-002",
+      "title": "PAM特权账号管理 (Privileged Access Management)",
+      "path": ".\\32-身份访问管理-IAM\\skills\\PAM特权账号管理-PrivilegedAccessManagement.md",
+      "mitre_attack": [
+        "T1078",
+        "T1555",
+        "T1556",
+        "T1569"
+      ]
+    },
+    {
+      "id": "32-003",
+      "title": "云IAM与联邦认证 (Cloud IAM & Federation)",
+      "path": ".\\32-身份访问管理-IAM\\skills\\云IAM与联邦认证-CloudIAMFederation.md",
+      "mitre_attack": [
+        "T1078",
+        "T1528",
+        "T1550",
+        "T1613"
+      ]
+    },
+    {
+      "id": "32-001",
+      "title": "企业IAM策略与架构 (Enterprise IAM Strategy & Architecture)",
+      "path": ".\\32-身份访问管理-IAM\\skills\\企业IAM策略与架构-EnterpriseIAMStrategy.md",
+      "mitre_attack": [
+        "T1078",
+        "T1528",
+        "T1550",
+        "T1556"
+      ]
+    },
+    {
+      "id": "33-002",
+      "title": "Kubernetes RBAC与安全策略 (Kubernetes RBAC & Security Policy)",
+      "path": ".\\33-容器安全-ContainerSecurity\\skills\\Kubernetes RBAC与安全策略-KubernetesRBACSecurityPolicy.md",
+      "mitre_attack": [
+        "T1525",
+        "T1578",
+        "T1610",
+        "T1613"
+      ]
+    },
+    {
+      "id": "33-003",
+      "title": "容器运行时安全 (Container Runtime Security with Falco)",
+      "path": ".\\33-容器安全-ContainerSecurity\\skills\\容器运行时安全-Falco-ContainerRuntimeSecurityFalco.md",
+      "mitre_attack": [
+        "T1525",
+        "T1578",
+        "T1610",
+        "T1611"
+      ]
+    },
+    {
+      "id": "33-004",
+      "title": "容器逃逸检测与防御 (Container Escape Detection & Defense)",
+      "path": ".\\33-容器安全-ContainerSecurity\\skills\\容器逃逸检测与防御-ContainerEscapeDetectionDefense.md",
+      "mitre_attack": [
+        "T1525",
+        "T1578",
+        "T1610",
+        "T1611"
+      ]
+    },
+    {
+      "id": "33-001",
+      "title": "容器镜像安全与漏洞扫描 (Container Image Security & Scanning)",
+      "path": ".\\33-容器安全-ContainerSecurity\\skills\\容器镜像安全与漏洞扫描-ContainerImageSecurityScanning.md",
+      "mitre_attack": [
+        "T1204",
+        "T1525",
+        "T1578",
+        "T1610"
+      ]
+    },
+    {
+      "id": "34-002",
+      "title": "API认证与授权安全 (API Authentication & Authorization Security)",
+      "path": ".\\34-API安全-APISecurity\\skills\\API认证与授权安全-APIAuthAuthorizationSecurity.md",
+      "mitre_attack": [
+        "T1528",
+        "T1550",
+        "T1556",
+        "T1606"
+      ]
+    },
+    {
+      "id": "34-003",
+      "title": "GraphQL与微服务API安全 (GraphQL & Microservice API Security)",
+      "path": ".\\34-API安全-APISecurity\\skills\\GraphQL与微服务API安全-GraphQLMicroserviceAPISecurity.md",
+      "mitre_attack": [
+        "T1071",
+        "T1190",
+        "T1578",
+        "T1613"
+      ]
+    },
+    {
+      "id": "34-001",
+      "title": "OWASP API安全测试 (OWASP API Security Testing)",
+      "path": ".\\34-API安全-APISecurity\\skills\\OWASP API安全测试-OWASPAPISecurityTesting.md",
+      "mitre_attack": [
+        "T1071",
+        "T1190",
+        "T1550",
+        "T1593"
+      ]
+    },
+    {
+      "id": "35-002",
+      "title": "PKI架构与证书安全管理 (PKI Architecture & Certificate Management)",
+      "path": ".\\35-密码学与PKI-CryptographyPKI\\skills\\PKI架构与证书安全管理-PKIArchitectureCertificateManagement.md",
+      "mitre_attack": [
+        "T1552",
+        "T1587",
+        "T1588",
+        "T1608"
+      ]
+    },
+    {
+      "id": "35-001",
+      "title": "TLS/SSL安全配置与审计 (TLS/SSL Security Configuration & Audit)",
+      "path": ".\\35-密码学与PKI-CryptographyPKI\\skills\\TLS-SSL安全配置与审计-TLSSSLSecurityConfigurationAudit.md",
+      "mitre_attack": [
+        "T1573",
+        "T1587",
+        "T1608"
+      ]
+    },
+    {
+      "id": "35-003",
+      "title": "加密算法与密钥管理 (Encryption Algorithms & Key Management)",
+      "path": ".\\35-密码学与PKI-CryptographyPKI\\skills\\加密算法与密钥管理-EncryptionAlgorithmsKeyManagement.md",
+      "mitre_attack": [
+        "T1552",
+        "T1573",
+        "T1587",
+        "T1608"
+      ]
+    },
+    {
+      "id": "36-003",
+      "title": "ZTNA解决方案与IAM集成 (ZTNA Solutions & IAM Integration)",
+      "path": ".\\36-零信任架构-ZeroTrust\\skills\\ZTNA解决方案与IAM集成-ZTNASolutionsIAMIntegration.md",
+      "mitre_attack": [
+        "T1078",
+        "T1550",
+        "T1556"
+      ]
+    },
+    {
+      "id": "36-002",
+      "title": "微隔离与软件定义边界 (Microsegmentation & Software-Defined Perimeter)",
+      "path": ".\\36-零信任架构-ZeroTrust\\skills\\微隔离与软件定义边界-SDP-MicrosegmentationSDP.md",
+      "mitre_attack": [
+        "T1046",
+        "T1090",
+        "T1557"
+      ]
+    },
+    {
+      "id": "36-001",
+      "title": "零信任架构设计与实施 (Zero Trust Architecture Design & Implementation)",
+      "path": ".\\36-零信任架构-ZeroTrust\\skills\\零信任架构设计与实施-ZeroTrustArchitectureDesign.md",
+      "mitre_attack": [
+        "T1078",
+        "T1550",
+        "T1557"
+      ]
+    },
+    {
+      "id": "37-001",
+      "title": "EDR部署与检测规则 (EDR Deployment & Detection Rules)",
+      "path": ".\\37-端点安全-EndpointSecurity\\skills\\EDR部署与检测规则-EDRDeploymentDetectionRules.md",
+      "mitre_attack": [
+        "T1059",
+        "T1071",
+        "T1546",
+        "T1562",
+        "T1564"
+      ]
+    },
+    {
+      "id": "37-002",
+      "title": "文件less恶意软件与LOLBins检测 (Fileless Malware & LOLBins Detection)",
+      "path": ".\\37-端点安全-EndpointSecurity\\skills\\文件less恶意软件与LOLBins检测-FilelessMalwareLOLBinsDetection.md",
+      "mitre_attack": [
+        "T1059",
+        "T1218",
+        "T1546",
+        "T1564",
+        "T1620"
+      ]
+    },
+    {
+      "id": "37-004",
+      "title": "移动设备安全与MDM (Mobile Device Security & MDM)",
+      "path": ".\\37-端点安全-EndpointSecurity\\skills\\移动设备安全与MDM-MobileDeviceSecurityMDM.md",
+      "mitre_attack": [
+        "T1204",
+        "T1475",
+        "T1514",
+        "T1529"
+      ]
+    },
+    {
+      "id": "37-003",
+      "title": "端点加固与合规基线 (Endpoint Hardening & Compliance Baseline)",
+      "path": ".\\37-端点安全-EndpointSecurity\\skills\\端点加固与合规基线-EndpointHardeningComplianceBaseline.md",
+      "mitre_attack": [
+        "T1562",
+        "T1564"
+      ]
+    },
+    {
+      "id": "38-002",
+      "title": "勒索软件应急响应与恢复 (Ransomware Incident Response & Recovery)",
+      "path": ".\\38-勒索软件防御-RansomwareDefense\\skills\\勒索软件应急响应与恢复-RansomwareIncidentResponseRecovery.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1485"
+      ]
+    },
+    {
+      "id": "38-001",
+      "title": "勒索软件攻击链分析与检测 (Ransomware Attack Chain Analysis & Detection)",
+      "path": ".\\38-勒索软件防御-RansomwareDefense\\skills\\勒索软件攻击链分析与检测-RansomwareAttackChainAnalysisDetection.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490",
+        "T1485",
+        "T1561"
+      ]
+    },
+    {
+      "id": "38-003",
+      "title": "反勒索软件加固与备份策略 (Anti-Ransomware Hardening & Backup Strategy)",
+      "path": ".\\38-勒索软件防御-RansomwareDefense\\skills\\反勒索软件加固与备份策略-AntiRansomwareHardeningBackup.md",
+      "mitre_attack": [
+        "T1486",
+        "T1490"
+      ]
+    },
+    {
+      "id": "39-001",
+      "title": "安全框架与合规审计 (Security Framework & Compliance Audit)",
+      "path": ".\\39-安全治理合规-GovernanceCompliance\\skills\\安全框架与合规审计-SecurityFrameworkComplianceAudit.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "39-003",
+      "title": "安全策略体系与安全意识 (Security Policy & Awareness)",
+      "path": ".\\39-安全治理合规-GovernanceCompliance\\skills\\安全策略体系与安全意识-SecurityPolicyAwareness.md",
+      "mitre_attack": []
+    },
+    {
+      "id": "39-002",
+      "title": "风险管理与安全度量 (Risk Management & Security Metrics)",
+      "path": ".\\39-安全治理合规-GovernanceCompliance\\skills\\风险管理与安全度量-RiskManagementSecurityMetrics.md",
+      "mitre_attack": []
+    }
+  ]
+}

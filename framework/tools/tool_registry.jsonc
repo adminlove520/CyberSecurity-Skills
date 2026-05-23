@@ -1,0 +1,29 @@
+{
+  "tools": {
+    "nmap": {
+      "command": "nmap -sV -sC {target}",
+      "description": "Service and script scanning",
+      "module": "01"
+    },
+    "subfinder": {
+      "command": "subfinder -d {target} -o {output}",
+      "description": "Subdomain discovery",
+      "module": "01"
+    },
+    "nuclei": {
+      "command": "nuclei -u {target} -t {templates}",
+      "description": "Template-based vulnerability scanner",
+      "module": "02"
+    },
+    "sqlmap": {
+      "command": "sqlmap -u \"{url}\" --batch --random-agent",
+      "description": "Automatic SQL injection and database takeover tool",
+      "module": "03"
+    },
+    "ffuf": {
+      "command": "ffuf -u {target}/FUZZ -w {wordlist}",
+      "description": "Fast web fuzzer",
+      "module": "01"
+    }
+  }
+}

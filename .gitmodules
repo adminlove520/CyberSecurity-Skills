@@ -1,0 +1,9 @@
+[submodule "external/agency-agents-zh"]
+	path = external/agency-agents-zh
+	url = https://github.com/jnMetaCode/agency-agents-zh.git
+[submodule "external/agency-agents"]
+	path = external/agency-agents
+	url = https://github.com/msitarzewski/agency-agents.git
+[submodule "external/AboutSecurity"]
+	path = external/AboutSecurity
+	url = https://github.com/wgpsec/AboutSecurity.git

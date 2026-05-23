@@ -1,0 +1,16 @@
+{
+  "mcp_servers": {
+    "burp_suite": {
+      "type": "http_api",
+      "url": "http://127.0.0.1:8090",
+      "auth_token": "YOUR_BURP_REST_API_KEY"
+    },
+    "kali_linux": {
+      "type": "ssh",
+      "host": "127.0.0.1",
+      "port": 22,
+      "user": "kali",
+      "use_wsl": true
+    }
+  }
+}

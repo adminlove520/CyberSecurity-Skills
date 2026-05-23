@@ -1,0 +1,18 @@
+services:
+  juice-shop:
+    image: bkimminich/juice-shop
+    ports:
+      - "3000:3000"
+    networks:
+      - lab-net
+
+  dvwa:
+    image: vulnerables/web-dvwa
+    ports:
+      - "80:80"
+    networks:
+      - lab-net
+
+networks:
+  lab-net:
+    driver: bridge
