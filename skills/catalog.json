@@ -1,0 +1,170 @@
+{
+  "version": "3.0.0",
+  "last_updated": "2026-05-29",
+  "skills": [
+    {
+      "id": "wxmini-security-audit",
+      "name": "WeChat Mini Program Security Audit",
+      "description": "Comprehensive security audit for WeChat Mini Programs using 7-agent architecture",
+      "category": "mobile",
+      "source": "wxmini-security-audit",
+      "version": "1.0.0",
+      "agents": ["wxmini-decompiler", "wxmini-secret-scanner", "wxmini-endpoint-miner", "wxmini-crypto-analyzer", "wxmini-vuln-analyzer", "wxmini-reporter", "wxmini-custom-analyzer"],
+      "stage": ["hunt", "validate"],
+      "tools": ["unveilr"],
+      "mcp_server": "wxmini-server"
+    },
+    {
+      "id": "java-route-mapper",
+      "name": "Java Route Mapper",
+      "description": "Map HTTP routes and parameters in Java Web applications",
+      "category": "code-audit/java",
+      "source": "java-audit-skills",
+      "version": "1.0.0",
+      "dependencies": [],
+      "stage": ["recon"],
+      "agents": ["java-route-mapper"],
+      "mcp_server": "java-server"
+    },
+    {
+      "id": "java-route-tracer",
+      "name": "Java Route Tracer",
+      "description": "Trace call chains from Controller to DAO in Java applications",
+      "category": "code-audit/java",
+      "source": "java-audit-skills",
+      "version": "1.0.0",
+      "dependencies": ["java-route-mapper"],
+      "stage": ["trace"],
+      "agents": ["java-route-tracer"]
+    },
+    {
+      "id": "java-sql-audit",
+      "name": "Java SQL Injection Auditor",
+      "description": "Detect SQL injection vulnerabilities in Java code",
+      "category": "code-audit/java",
+      "source": "java-audit-skills",
+      "version": "1.0.0",
+      "dependencies": ["java-route-mapper", "java-route-tracer"],
+      "stage": ["hunt", "validate"],
+      "agents": ["java-sql-auditor"]
+    },
+    {
+      "id": "java-auth-audit",
+      "name": "Java Authentication Auditor",
+      "description": "Audit authentication and authorization mechanisms in Java",
+      "category": "code-audit/java",
+      "source": "java-audit-skills",
+      "version": "1.0.0",
+      "dependencies": ["java-route-mapper"],
+      "stage": ["hunt", "validate"],
+      "agents": ["java-auth-auditor"]
+    },
+    {
+      "id": "java-file-upload-audit",
+      "name": "Java File Upload Auditor",
+      "description": "Detect file upload vulnerabilities in Java applications",
+      "category": "code-audit/java",
+      "source": "java-audit-skills",
+      "version": "1.0.0",
+      "dependencies": ["java-route-mapper"],
+      "stage": ["hunt"],
+      "agents": ["java-file-upload-auditor"]
+    },
+    {
+      "id": "java-file-read-audit",
+      "name": "Java File Read Auditor",
+      "description": "Detect path traversal vulnerabilities in Java file operations",
+      "category": "code-audit/java",
+      "source": "java-audit-skills",
+      "version": "1.0.0",
+      "dependencies": ["java-route-mapper"],
+      "stage": ["hunt"],
+      "agents": ["java-file-read-auditor"]
+    },
+    {
+      "id": "java-xxe-audit",
+      "name": "Java XXE Auditor",
+      "description": "Detect XML External Entity vulnerabilities in Java",
+      "category": "code-audit/java",
+      "source": "java-audit-skills",
+      "version": "1.0.0",
+      "dependencies": ["java-route-mapper"],
+      "stage": ["hunt"],
+      "agents": ["java-xxe-auditor"]
+    },
+    {
+      "id": "java-vuln-scanner",
+      "name": "Java Component Vulnerability Scanner",
+      "description": "Scan Java dependencies for known CVEs",
+      "category": "code-audit/java",
+      "source": "java-audit-skills",
+      "version": "1.0.0",
+      "dependencies": [],
+      "stage": ["recon"],
+      "agents": ["java-vuln-scanner"],
+      "cve_rules": 130
+    },
+    {
+      "id": "java-audit-pipeline",
+      "name": "Java Full Audit Pipeline",
+      "description": "Complete 5-stage Java security audit pipeline with dynamic workers",
+      "category": "code-audit/java",
+      "source": "java-audit-skills",
+      "version": "1.0.0",
+      "dependencies": ["java-route-mapper", "java-route-tracer", "java-sql-audit", "java-auth-audit", "java-vuln-scanner"],
+      "stage": ["recon", "hunt", "validate", "trace", "report"],
+      "agents": ["java-pipeline-orchestrator"],
+      "mcp_server": "java-server"
+    },
+    {
+      "id": "burp-suite-bridge",
+      "name": "Burp Suite MCP Bridge",
+      "description": "Integration with Burp Suite Professional via MCP",
+      "category": "tools",
+      "source": "wmpf-mcp-bridge",
+      "version": "1.0.0",
+      "stage": ["hunt", "validate"],
+      "tools": ["burp_proxy", "burp_scanner", "burp_repeater"],
+      "mcp_server": "burp-bridge"
+    },
+    {
+      "id": "kali-linux-bridge",
+      "name": "Kali Linux MCP Bridge",
+      "description": "Execute security tools on Kali Linux via MCP",
+      "category": "tools",
+      "source": "wmpf-mcp-bridge",
+      "version": "1.0.0",
+      "stage": ["recon", "hunt"],
+      "tools": ["nmap", "metasploit", "gobuster", "sqlmap"],
+      "mcp_server": "kali-bridge"
+    }
+  ],
+  "categories": {
+    "mobile": "Mobile Security",
+    "code-audit/java": "Java Code Audit",
+    "code-audit/php": "PHP Code Audit",
+    "code-audit/python": "Python Code Audit",
+    "web": "Web Security",
+    "network": "Network Security",
+    "cloud": "Cloud Security",
+    "tools": "Security Tools Integration"
+  },
+  "mcp_servers": {
+    "wxmini-server": {
+      "port": 43827,
+      "tools": ["wxmini_analyze", "wxmini_extract_secrets", "wxmini_get_endpoints"]
+    },
+    "java-server": {
+      "port": 8082,
+      "tools": ["java_audit", "java_route_map", "java_trace_route", "java_scan_dependencies"]
+    },
+    "burp-bridge": {
+      "port": 8090,
+      "tools": ["burp_get_issues", "burp_proxy_intercept", "burp_proxy_history"]
+    },
+    "kali-bridge": {
+      "port": 8081,
+      "tools": ["kali_exec", "kali_nmap", "kali_msf"]
+    }
+  }
+}

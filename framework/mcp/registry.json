@@ -1,0 +1,160 @@
+{
+  "version": "3.0.0",
+  "servers": {
+    "burp-bridge": {
+      "name": "Burp Suite Bridge",
+      "url": "http://127.0.0.1:8090",
+      "token": "${BURP_MCP_TOKEN}",
+      "description": "Integration with Burp Suite Professional",
+      "tools": [
+        {
+          "name": "burp_get_issues",
+          "description": "Get discovered vulnerabilities from Burp Scanner",
+          "category": "scan",
+          "parameters": {
+            "scan_id": {"type": "string", "required": false}
+          },
+          "required_auth": ["burp_api_key"]
+        },
+        {
+          "name": "burp_proxy_intercept",
+          "description": "Control proxy interception",
+          "category": "utils",
+          "parameters": {
+            "action": {"type": "string", "enum": ["enable", "disable"], "required": true}
+          },
+          "required_auth": ["burp_api_key"]
+        },
+        {
+          "name": "burp_proxy_history",
+          "description": "Get proxy history",
+          "category": "recon",
+          "parameters": {
+            "limit": {"type": "integer", "default": 100}
+          },
+          "required_auth": ["burp_api_key"]
+        }
+      ]
+    },
+    "kali-bridge": {
+      "name": "Kali Linux Bridge",
+      "url": "http://127.0.0.1:8081",
+      "token": "${KALI_MCP_TOKEN}",
+      "description": "Execute tools on Kali Linux via SSH/WSL",
+      "tools": [
+        {
+          "name": "kali_exec",
+          "description": "Execute command on Kali Linux",
+          "category": "utils",
+          "parameters": {
+            "command": {"type": "string", "required": true},
+            "timeout": {"type": "integer", "default": 300}
+          },
+          "required_auth": ["kali_ssh_key"]
+        },
+        {
+          "name": "kali_nmap",
+          "description": "Run nmap scan",
+          "category": "scan",
+          "parameters": {
+            "target": {"type": "string", "required": true},
+            "options": {"type": "string", "default": "-sV -sC"}
+          },
+          "required_auth": ["kali_ssh_key"]
+        },
+        {
+          "name": "kali_msf",
+          "description": "Execute Metasploit module",
+          "category": "exploit",
+          "parameters": {
+            "module": {"type": "string", "required": true},
+            "options": {"type": "object", "default": {}}
+          },
+          "required_auth": ["kali_ssh_key"]
+        }
+      ]
+    },
+    "wxmini-server": {
+      "name": "WeChat Mini Program Analyzer",
+      "url": "http://127.0.0.1:43827",
+      "token": "${WXMINI_MCP_TOKEN}",
+      "description": "Analyze WeChat Mini Program security",
+      "tools": [
+        {
+          "name": "wxmini_analyze",
+          "description": "Analyze wxapkg package",
+          "category": "scan",
+          "parameters": {
+            "package_path": {"type": "string", "required": true},
+            "deep_analysis": {"type": "boolean", "default": false}
+          },
+          "required_auth": []
+        },
+        {
+          "name": "wxmini_extract_secrets",
+          "description": "Extract secrets from mini program",
+          "category": "scan",
+          "parameters": {
+            "package_path": {"type": "string", "required": true}
+          },
+          "required_auth": []
+        },
+        {
+          "name": "wxmini_get_endpoints",
+          "description": "Extract API endpoints",
+          "category": "recon",
+          "parameters": {
+            "package_path": {"type": "string", "required": true}
+          },
+          "required_auth": []
+        }
+      ]
+    },
+    "java-server": {
+      "name": "Java Code Auditor",
+      "url": "http://127.0.0.1:8082",
+      "token": "${JAVA_MCP_TOKEN}",
+      "description": "Audit Java application security",
+      "tools": [
+        {
+          "name": "java_audit",
+          "description": "Full Java project audit",
+          "category": "scan",
+          "parameters": {
+            "project_path": {"type": "string", "required": true},
+            "audit_type": {"type": "string", "enum": ["full", "sql", "auth", "file", "xxe"], "default": "full"}
+          },
+          "required_auth": []
+        },
+        {
+          "name": "java_route_map",
+          "description": "Map Java routes and parameters",
+          "category": "recon",
+          "parameters": {
+            "project_path": {"type": "string", "required": true}
+          },
+          "required_auth": []
+        },
+        {
+          "name": "java_trace_route",
+          "description": "Trace route call chain",
+          "category": "scan",
+          "parameters": {
+            "project_path": {"type": "string", "required": true},
+            "route": {"type": "string", "required": true}
+          },
+          "required_auth": []
+        },
+        {
+          "name": "java_scan_dependencies",
+          "description": "Scan for vulnerable dependencies",
+          "category": "scan",
+          "parameters": {
+            "project_path": {"type": "string", "required": true}
+          },
+          "required_auth": []
+        }
+      ]
+    }
+  }
+}
