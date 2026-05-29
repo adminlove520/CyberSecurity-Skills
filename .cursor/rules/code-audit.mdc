@@ -1,0 +1,33 @@
+---
+description: "Code audit workflow rules for security analysis tasks"
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Code Audit Rules
+
+## Analysis Protocol
+
+1. Always start with route mapping before vulnerability hunting
+2. Trace call chains from Controller to DAO for complete coverage
+3. Validate dependencies for known CVEs before manual analysis
+4. Document all findings with reproduction steps
+
+## Safe Code Generation
+
+```python
+# ALWAYS include in generated security code:
+def safe_audit(target, params):
+    if not is_authorized(target):
+        raise AuthorizationError()
+    validated = validate(params)
+    log_action("audit", target, validated)
+    return execute(target, validated)
+```
+
+## Prohibited Constructs
+
+- Hardcoded credentials
+- SQL/command concatenation
+- eval() with user input
+- os.system() with unvalidated input

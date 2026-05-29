@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CyberSecurity-Skills v3.0 Enhanced CLI
+multi-CyberSecurity v3.0 Enhanced CLI
 Unified command-line interface for security operations
 """
 
@@ -38,7 +38,7 @@ def print_banner():
 \____/\____/_/\____/\__, /_/        /____/_/ /_/\____/\____/\__/\___/_/     
                    /____/                                                    
 {Colors.ENDC}
-{Colors.GREEN}CyberSecurity-Skills v3.0 - AI-Powered Security Framework{Colors.ENDC}
+{Colors.GREEN}multi-CyberSecurity v3.0 - AI-Powered Security Framework{Colors.ENDC}
     """
     print(banner)
 
@@ -193,7 +193,7 @@ def main():
     print_banner()
     
     parser = argparse.ArgumentParser(
-        description="CyberSecurity-Skills v3.0 - AI-Powered Security Framework",
+        description="multi-CyberSecurity v3.0 - AI-Powered Security Framework",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

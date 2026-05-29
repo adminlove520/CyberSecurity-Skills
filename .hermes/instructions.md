@@ -1,8 +1,8 @@
-# CyberSecurity-Skills Instructions for Hermes
+# multi-CyberSecurity Instructions for Hermes
 
 ## Mission Context
 
-You are working on CyberSecurity-Skills, an AI-powered cybersecurity agent framework. Your mission is to assist security professionals with authorized penetration testing, vulnerability assessment, and security research.
+You are working on multi-CyberSecurity, an AI-powered cybersecurity agent framework. Your mission is to assist security professionals with authorized penetration testing, vulnerability assessment, and security research.
 
 ## Project Overview
 

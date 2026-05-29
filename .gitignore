@@ -29,3 +29,16 @@ _ls*.ps1
 _tmp*.ps1
 *.log
 *.tmp
+
+# Claude Code local settings
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Environment and secrets
+.env
+.env.local
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3

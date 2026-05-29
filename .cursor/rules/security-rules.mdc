@@ -1,0 +1,34 @@
+---
+description: "Security-first coding rules for multi-CyberSecurity project"
+alwaysApply: true
+---
+
+# Security-First Rules
+
+## Absolute Rules (Never Violate)
+
+1. **Authorization Verification** - Always confirm target is authorized before any action
+2. **No Malicious Code** - Never generate ransomware, malware, or weaponized exploits
+3. **Data Protection** - Never exfiltrate sensitive data; all findings stay within authorized scope
+4. **Safety Validation** - All PoC code must include safety checks and authorization guards
+
+## Code Quality
+
+1. All Python code must pass pylint with score >= 8.0
+2. All markdown must pass markdownlint
+3. JSON/JSONC files must be valid
+4. Skills must include proper YAML frontmatter
+
+## Documentation
+
+1. Every skill must have a README.md with usage examples
+2. Every agent must have a system prompt document
+3. All public APIs must be documented
+4. Findings must reference standards (CVE, CWE, OWASP)
+
+## Testing
+
+1. New skills must include test cases
+2. MCP tools must have integration tests
+3. Pipeline stages must be validated independently
+4. Cost estimation must be accurate within 10%

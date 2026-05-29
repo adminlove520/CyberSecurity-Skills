@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "wxmini-server": {
+      "command": "python",
+      "args": ["framework/mcp/client.py", "--server", "wxmini"],
+      "env": {}
+    },
+    "java-server": {
+      "command": "python",
+      "args": ["framework/mcp/client.py", "--server", "java"],
+      "env": {}
+    },
+    "burp-bridge": {
+      "type": "http",
+      "url": "http://127.0.0.1:8090"
+    },
+    "kali-bridge": {
+      "type": "http",
+      "url": "http://127.0.0.1:8081"
+    }
+  }
+}

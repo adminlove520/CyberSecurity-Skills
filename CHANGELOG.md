@@ -1,5 +1,85 @@
 # Changelog
 
+## [3.3.0] - 2026-05-29
+
+### 🚀 新增功能
+
+#### Cursor IDE 支持
+- 新增 `.cursor/` 配置目录
+  - `AGENTS.md` - Cursor专用Agent定义
+  - `rules/security-rules.mdc` - 安全规则（alwaysApply）
+  - `rules/code-audit.mdc` - 代码审计规则（Python文件触发）
+  - `mcp.json` - MCP服务器连接配置
+  - `README.md` - 配置说明
+
+#### Claude Code 支持
+- 新增 `CLAUDE.md` - 项目级指令（根目录）
+- 新增 `.claude/` 配置目录
+  - `rules/framework-dev.md` - 框架开发规则（Python文件）
+  - `rules/agent-definitions.md` - Agent定义标准（Markdown文件）
+  - `agents/security-auditor.md` - 安全审计子代理
+  - `settings.json` - 权限控制和Git Hooks
+  - `README.md` - 配置说明
+
+#### OpenAI Codex CLI 支持
+- 新增 `AGENTS.md` - 项目级Agent指令（根目录）
+- 新增 `.codex/` 配置目录
+  - `config.toml` - MCP服务器、沙箱策略、项目配置
+  - `README.md` - 配置说明
+
+### 🔧 修复
+
+#### 数据修复
+- 修复 `index.json` 中模块 17-26 的重复数据（删除10个重复模块）
+- 更新 `index.json` 版本从 2.2.0 到 3.2.0
+- 更新 `index.json` schema URL 指向新仓库名
+- 更新 `skills/catalog.json` 版本从 3.0.0 到 3.2.0
+- 修复 README.md 版本徽章从 3.0.0 到 3.2.0
+
+#### 名称统一
+- 批量替换 21 个文件中的旧项目名 `CyberSecurity-Skills` → `multi-CyberSecurity`
+- 涵盖配置文件、Python脚本、Agent定义、文档等
+
+#### 架构图更新
+- README架构图新增 `.cursor/`、`.claude/`、`.codex/` 三个平台配置
+- 多平台支持状态全部更新为 ✅ 已支持
+
+#### .gitignore 增强
+- 新增 `.claude/settings.local.json` 排除
+- 新增 `CLAUDE.local.md` 排除
+- 新增 `.env` / `.env.local` 排除
+- 新增 `*.db` / `*.sqlite` 排除
+
+### 📁 新增文件
+
+```
+.cursor/
+├── AGENTS.md
+├── mcp.json
+├── README.md
+└── rules/
+    ├── security-rules.mdc
+    └── code-audit.mdc
+
+.claude/
+├── README.md
+├── agents/
+│   └── security-auditor.md
+├── rules/
+│   ├── framework-dev.md
+│   └── agent-definitions.md
+└── settings.json
+
+.codex/
+├── README.md
+└── config.toml
+
+CLAUDE.md              # Claude Code 项目指令
+AGENTS.md              # Codex/Cursor 项目指令
+```
+
+---
+
 ## [3.2.0] - 2026-05-29
 
 ### 🏷️ 项目重命名

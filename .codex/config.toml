@@ -1,0 +1,31 @@
+# multi-CyberSecurity Codex Configuration
+
+# Project root markers
+project_root_markers = [".git"]
+
+# Fallback rule files (also recognize CLAUDE.md from Claude Code)
+project_doc_fallback_filenames = ["CLAUDE.md", "GEMINI.md"]
+
+# Max size for combined rule chain
+project_doc_max_bytes = 32768
+
+# MCP Server Configuration
+[mcp_servers.wxmini-server]
+command = "python"
+args = ["framework/mcp/client.py", "--server", "wxmini"]
+
+[mcp_servers.java-server]
+command = "python"
+args = ["framework/mcp/client.py", "--server", "java"]
+
+[mcp_servers.burp-bridge]
+command = "python"
+args = ["framework/mcp/client.py", "--server", "burp"]
+
+[mcp_servers.kali-bridge]
+command = "python"
+args = ["framework/mcp/client.py", "--server", "kali"]
+
+# Sandbox policy: read-only by default for security
+# Options: read-only | workspace-write | danger-full-access
+sandbox = "read-only"

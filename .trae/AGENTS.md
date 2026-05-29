@@ -1,4 +1,4 @@
-# CyberSecurity-Skills Agent Definitions for Trae
+# multi-CyberSecurity Agent Definitions for Trae
 
 ## Core Agents
 

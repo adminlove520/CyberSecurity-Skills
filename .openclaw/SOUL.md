@@ -1,4 +1,4 @@
-# CyberSecurity-Skills Project Soul
+# multi-CyberSecurity Project Soul
 
 ## The Spirit of This Project
 
@@ -135,7 +135,7 @@ But by:
 
 ---
 
-## The Heart of CyberSecurity-Skills
+## The Heart of multi-CyberSecurity
 
 *We find vulnerabilities to fix them.*
 *We build tools to defend with them.*

@@ -2,7 +2,7 @@
 
 ### *AI驱动的网络安全智能体框架*
 
-[![Version](https://img.shields.io/badge/version-3.0.0-blue?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-3.2.0-blue?style=flat-square)](CHANGELOG.md)
 [![Python](https://img.shields.io/badge/python-3.8+-green?style=flat-square)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-orange?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/adminlove520/multi-CyberSecurity?style=flat-square&logo=github)](https://github.com/adminlove520/multi-CyberSecurity/stargazers)
@@ -77,6 +77,9 @@ python cli.py skill export --platform trae
 ├─────────────────────────────────────────────────────────────────┤
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐             │
 │  │    .trae   │  │   .hermes   │  │  .openclaw  │  ← 平台配置  │
+│  └─────────────┘  └─────────────┘  └─────────────┘             │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐             │
+│  │   .cursor   │  │   .claude   │  │   .codex    │  ← 平台配置  │
 │  └─────────────┘  └─────────────┘  └─────────────┘             │
 ├─────────────────────────────────────────────────────────────────┤
 │  ┌─────────────────────────────────────────────────────────────┐ │
@@ -210,9 +213,9 @@ Stage 5: 质量校验与报告
 | Trae | `.trae/` | ✅ 已支持 |
 | Hermes | `.hermes/` | ✅ 已支持 |
 | OpenClaw | `.openclaw/` | ✅ 已支持 |
-| Cursor | `.cursor/` | 🔄 待扩展 |
-| Claude | `.claude/` | 🔄 待扩展 |
-| Codex | `.codex/` | 🔄 待扩展 |
+| Cursor | `.cursor/` | ✅ 已支持 |
+| Claude | `.claude/` | ✅ 已支持 |
+| Codex | `.codex/` | ✅ 已支持 |
 
 ---
 

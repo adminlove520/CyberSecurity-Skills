@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CyberSecurity-Skills - AI Agent 技能查询与验证 API
+multi-CyberSecurity - AI Agent 技能查询与验证 API
 =====================================================
 为 AI Agent 提供结构化查询能力，支持：
   - list-modules   列出所有安全模块
@@ -257,7 +257,7 @@ def cmd_validate(index: dict):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="CyberSecurity-Skills AI Agent 查询与验证工具",
+        description="multi-CyberSecurity AI Agent 查询与验证工具",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""示例:
   %(prog)s list-modules

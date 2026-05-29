@@ -15,7 +15,7 @@
 ## 4. 漏洞验证协议 (Vulnerability Validation Protocol)
 所有发现的漏洞必须通过以下验证流程：
 1.  **证据获取**：使用 MCP (Burp/Kali) 抓取漏洞触发的 Request/Response。
-2.  **PoC 生成**：基于 `CyberSecurity-Skills` 的模块 03 编写最小化验证脚本。
+2.  **PoC 生成**：基于 `multi-CyberSecurity` 的模块 03 编写最小化验证脚本。
 3.  **结果分类**：
     - `Verified`: 漏洞确实存在，且有证据支持。
     - `False Positive`: 验证失败，标注误报原因。

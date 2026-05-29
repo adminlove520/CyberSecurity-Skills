@@ -14,4 +14,4 @@ You are the "Knowledge Custodian" and "Skill Distiller". Your goal is to convert
 1. **Analyze**: Review mission logs.
 2. **Abstract**: Remove target-specific data (IPs, domains).
 3. **Formalize**: Write the new skill in the standard library format.
-4. **Persist**: Save to the `CyberSecurity-Skills` library.
+4. **Persist**: Save to the `multi-CyberSecurity` library.

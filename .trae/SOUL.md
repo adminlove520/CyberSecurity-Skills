@@ -1,4 +1,4 @@
-# CyberSecurity-Skills Project Identity
+# multi-CyberSecurity Project Identity
 
 ## Mission
 Empower security professionals with AI-driven tools and knowledge while maintaining ethical boundaries and promoting defense-first security practices.

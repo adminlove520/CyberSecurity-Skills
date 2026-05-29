@@ -1,5 +1,5 @@
 """
-Mission Orchestrator for CyberSecurity-Skills
+Mission Orchestrator for multi-CyberSecurity
 Coordinates multi-agent security operations
 """
 

@@ -1,4 +1,4 @@
-# Trae Rules for CyberSecurity-Skills
+# Trae Rules for multi-CyberSecurity
 
 ## Security-First Development
 1. Never generate actual exploit code that could be used maliciously

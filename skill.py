@@ -3,7 +3,7 @@ import sys
 import os
 
 def main():
-    parser = argparse.ArgumentParser(description="CyberSecurity-Skills Unified CLI")
+    parser = argparse.ArgumentParser(description="multi-CyberSecurity Unified CLI")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
 
     # Command: lint

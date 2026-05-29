@@ -47,7 +47,7 @@ def generate_openclaw_manifests(skill_library_path, output_path):
         f.write(identity_content)
 
 def generate_trae_rules(skill_library_path, output_file):
-    rules = "# CyberSecurity-Skills Rules for Trae\n\n"
+    rules = "# multi-CyberSecurity Rules for Trae\n\n"
     rules += "When performing security tasks, refer to the following skill library:\n\n"
     
     for root, dirs, files in os.walk(skill_library_path):

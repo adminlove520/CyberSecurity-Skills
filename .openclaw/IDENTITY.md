@@ -1,7 +1,7 @@
-# CyberSecurity-Skills Project Identity
+# multi-CyberSecurity Project Identity
 
 ## Project Name
-CyberSecurity-Skills
+multi-CyberSecurity
 
 ## Project Type
 AI-Powered Cybersecurity Agent Framework

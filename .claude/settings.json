@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python cli.py:*)",
+      "Bash(python skill_query.py:*)",
+      "Bash(python scripts/*:*)",
+      "Bash(git:*)",
+      "Read",
+      "Write"
+    ],
+    "deny": [
+      "Bash(python cli.py audit --target * --max-cost 0)",
+      "Bash(rm -rf:*)"
+    ]
+  },
+  "hooks": {
+    "pre-commit": "python scripts/linter.py",
+    "post-edit": "python scripts/linter.py --file $FILE"
+  }
+}

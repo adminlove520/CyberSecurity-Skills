@@ -1,4 +1,4 @@
-# 🤖 AI Agent 使用指南 — CyberSecurity-Skills
+# 🤖 AI Agent 使用指南 — multi-CyberSecurity
 
 > 本文件指导 **AI Agent**（如 Claude Code、Cursor、CodeGPT 等）如何自动识别、查询和调用本技能库。
 
@@ -155,7 +155,7 @@ Agent 工作流:
   "skills": [
     {
       "name": "cybersecurity-skills",
-      "path": "/path/to/CyberSecurity-Skills",
+      "path": "/path/to/multi-CyberSecurity",
       "manifest": "agent-manifest.json"
     }
   ]

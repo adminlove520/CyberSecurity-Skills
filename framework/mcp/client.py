@@ -1,5 +1,5 @@
 """
-MCP Client for CyberSecurity-Skills
+MCP Client for multi-CyberSecurity
 Unified interface for MCP tool calls
 """
 
