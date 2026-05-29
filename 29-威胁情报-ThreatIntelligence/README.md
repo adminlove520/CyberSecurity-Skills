@@ -8,10 +8,10 @@
 
 | # | 技能名称 | 难度 |
 |:---:|---------|:---:|
-| 1 | [威胁情报馈入与TAXII/STIX管理](skills/威胁情报馈入与TAXII-STIX管理-ThreatIntelligenceFeedsTAXIISTIX.md) | ★★★ |
-| 2 | [MISP平台部署与威胁情报共享](skills/MISP平台部署与威胁情报共享-MISPDeploymentThreatIntelligenceSharing.md) | ★★★★ |
-| 3 | [APT组织分析与归因](skills/APT组织分析与归因-APTAnalysisAttribution.md) | ★★★★★ |
-| 4 | [威胁情报驱动安全运营](skills/威胁情报驱动安全运营-ThreatIntelligenceDrivenSecurityOperations.md) | ★★★★ |
+| 1 | [威胁情报馈入与TAXII/STIX管理](skills/威胁情报馈入与TAXII-STIX管理-ThreatIntelFeedsTAXIISTIX.md) | ★★★ |
+| 2 | [MISP平台部署与威胁情报共享](skills/MISP部署与威胁情报共享-MISPDeploymentIntelSharing.md) | ★★★★ |
+| 3 | [APT组织分析与归因](skills/APT组织分析与归因-APTGroupAnalysisAttribution.md) | ★★★★★ |
+| 4 | [威胁情报驱动安全运营](skills/威胁情报驱动安全运营-ThreatIntelDrivenSOC.md) | ★★★★ |
 
 ## 关键工具
 

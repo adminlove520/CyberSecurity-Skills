@@ -287,9 +287,9 @@ nmap -sV target -oG - | grep -E 'Ports:|Host:'
 
 ## 相关模块
 
-- [模块 03: 侦察与信息收集](../03-侦察与信息收集-Reconnaissance/)
-- [模块 12: 代码审计](../12-代码审计-CodeAuditing/)
-- [模块 18: 漏洞分析与利用](../18-漏洞分析与利用-VulnerabilityAnalysis/)
+- [模块 03: 侦察与信息收集](../01-信息搜集-Reconnaissance/)
+- [模块 12: 代码审计](../12-代码审计-CodeAudit/)
+- [模块 18: 漏洞分析与利用](../03-漏洞利用-Exploitation/)
 
 ---
 

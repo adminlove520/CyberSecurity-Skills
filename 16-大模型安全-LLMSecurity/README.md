@@ -24,7 +24,7 @@
 - [`skills/LLM数据泄露与隐私保护-DataLeakagePrivacy.md`](skills/LLM数据泄露与隐私保护-DataLeakagePrivacy.md)
 - [`skills/AI供应链安全-AISupplyChainSecurity.md`](skills/AI供应链安全-AISupplyChainSecurity.md)
 - [`skills/大模型红队测试-LLMRedTeaming.md`](skills/大模型红队测试-LLMRedTeaming.md)
-- [`skills/AI Agent权限与访问控制-AgentAuthorization.md`](skills/AI%20Agent权限与访问控制-AgentAuthorization.md)
+- [`skills/AI Agent权限与访问控制-AgentAuthorization.md`](skills/AI Agent权限与访问控制-AgentAuthorization.md)
 - [`skills/模型对抗攻击与防御-AdversarialAttackDefense.md`](skills/模型对抗攻击与防御-AdversarialAttackDefense.md)
 - [`skills/模型输出安全与幻觉检测-OutputSafetyHallucination.md`](skills/模型输出安全与幻觉检测-OutputSafetyHallucination.md)
 - [`skills/AI应用安全配置审计-AIAppSecurityConfig.md`](skills/AI应用安全配置审计-AIAppSecurityConfig.md)

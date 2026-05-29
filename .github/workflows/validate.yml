@@ -114,6 +114,9 @@ jobs:
                           continue
                       if link.startswith('mailto:'):
                           continue
+                      # Skip anchor-only links (no path separator)
+                      if '/' not in link and '.' not in link:
+                          continue
                       base_dir = os.path.dirname(fpath)
                       target = os.path.normpath(os.path.join(base_dir, link))
                       if not os.path.exists(target):

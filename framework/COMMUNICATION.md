@@ -5,7 +5,7 @@
 ## 1. 核心原则
 - **证据导向**：任何结论必须附带工具输出或截图路径。
 - **状态同步**：所有任务状态必须同步至 `MISSION_CONTROL.md`。
-- **结构化交接**：使用标准 [HANDOFF_TEMPLATE.md](HANDOFF_TEMPLATE.md) 进行工作转交。
+- **结构化交接**：使用标准 [HANDOFF_TEMPLATE.md](templates/HANDOFF_TEMPLATE.md) 进行工作转交。
 
 ## 2. 协作角色 (Role Play)
 - **Coordinator (总控)**：负责拆解任务、初始化 Mission、决策推进或重试。

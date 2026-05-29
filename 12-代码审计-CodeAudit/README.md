@@ -25,4 +25,4 @@
 - [`skills/C++代码审计-CPPCodeAudit.md`](skills/C++代码审计-CPPCodeAudit.md)
 - [`skills/Rust代码审计-RustCodeAudit.md`](skills/Rust代码审计-RustCodeAudit.md)
 - [`skills/Go代码审计-GoCodeAudit.md`](skills/Go代码审计-GoCodeAudit.md)
-- [`skills/AI Agent代码审计-AIAgentCodeAudit.md`](skills/AI%20Agent代码审计-AIAgentCodeAudit.md)
+- [`skills/AI Agent代码审计-AIAgentCodeAudit.md`](skills/AI Agent代码审计-AIAgentCodeAudit.md)
