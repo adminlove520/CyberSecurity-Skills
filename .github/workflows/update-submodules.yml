@@ -1,0 +1,67 @@
+name: Update Submodules
+
+on:
+  schedule:
+    # 每天 UTC 02:00 运行 (北京时间 10:00)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to update'
+        required: false
+        default: 'main'
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Update submodules
+        run: |
+          git submodule update --remote --recursive
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet HEAD; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No submodule updates found"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Submodule updates detected"
+          fi
+
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update-submodules
+          title: 'chore: Update submodules'
+          body: |
+            ## Submodule Updates
+            
+            This PR updates the following submodules to their latest versions:
+            
+            - `vendor/codegraph`
+            
+            ### Changes
+            - Automated daily submodule update
+            - Triggered by scheduled workflow
+            
+            ### Checklist
+            - [ ] Review submodule changes
+            - [ ] Test integration
+            - [ ] Merge if no issues
+          commit-message: 'chore: update submodules to latest'
+          delete-branch: true
