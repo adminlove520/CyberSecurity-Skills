@@ -53,28 +53,32 @@ jobs:
 
           errors = []
           for root, dirs, files in os.walk('.'):
-              if root.endswith(os.sep + 'skills'):
-                  for fname in sorted(files):
-                      if not fname.endswith('.md'):
-                          continue
-                      fpath = os.path.join(root, fname)
-                      with open(fpath, 'r', encoding='utf-8') as f:
-                          content = f.read()
-                      if not content.startswith('---'):
-                          errors.append(f'{fpath}: missing YAML frontmatter')
-                          continue
-                      match = re.match(r'^---\n(.*?)\n---\n', content, re.DOTALL)
-                      if not match:
-                          errors.append(f'{fpath}: YAML frontmatter format error')
-                          continue
-                      yaml_text = match.group(1)
-                      required = ['id:', 'title:', 'category:', 'difficulty:', 'tools:', 'last_updated:']
-                      for field in required:
-                          if field not in yaml_text:
-                              errors.append(f'{fpath}: missing field {field}')
-                      id_match = re.search(r'id:\s*"(\d+-\d+)"', yaml_text)
-                      if not id_match:
-                          errors.append(f'{fpath}: id format incorrect (expected NN-NNN)')
+              # Only check module skill directories (NN-xxx-yyy/skills), skip framework/skills
+              if not root.endswith(os.sep + 'skills'):
+                  continue
+              if os.sep + 'framework' + os.sep in root:
+                  continue
+              for fname in sorted(files):
+                  if not fname.endswith('.md'):
+                      continue
+                  fpath = os.path.join(root, fname)
+                  with open(fpath, 'r', encoding='utf-8') as f:
+                      content = f.read()
+                  if not content.startswith('---'):
+                      errors.append(f'{fpath}: missing YAML frontmatter')
+                      continue
+                  match = re.match(r'^---\n(.*?)\n---\n', content, re.DOTALL)
+                  if not match:
+                      errors.append(f'{fpath}: YAML frontmatter format error')
+                      continue
+                  yaml_text = match.group(1)
+                  required = ['id:', 'title:', 'category:', 'difficulty:', 'tools:', 'last_updated:']
+                  for field in required:
+                      if field not in yaml_text:
+                          errors.append(f'{fpath}: missing field {field}')
+                  id_match = re.search(r'id:\s*"?(\d+-\d+)"?', yaml_text)
+                  if not id_match:
+                      errors.append(f'{fpath}: id format incorrect (expected NN-NNN)')
 
           if errors:
               print(f'Found {len(errors)} issues:')
