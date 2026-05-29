@@ -12,7 +12,7 @@
 
 <div align="center">
 
-![Banner](./assets/banner.png)
+![Banner](./assets/banner.jpg)
 
 **🚀 8阶段审计流水线 | 🤖 7核心智能体 | 🔌 MCP服务集 | 📱 专项审计**
 
