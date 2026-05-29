@@ -5,8 +5,8 @@
 [![Version](https://img.shields.io/badge/version-3.0.0-blue?style=flat-square)](CHANGELOG.md)
 [![Python](https://img.shields.io/badge/python-3.8+-green?style=flat-square)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-orange?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/adminlove520/multi-CyberSecurity?style=flat-square)](https://github.com/adminlove520/multi-CyberSecurity/stargazers)
-[![Forks](https://img.shields.io/github/forks/adminlove520/multi-CyberSecurity?style=flat-square)](https://github.com/adminlove520/multi-CyberSecurity/network/members)
+[![Stars](https://img.shields.io/github/stars/adminlove520/multi-CyberSecurity?style=flat-square&logo=github)](https://github.com/adminlove520/multi-CyberSecurity/stargazers)
+[![Forks](https://img.shields.io/github/forks/adminlove520/multi-CyberSecurity?style=flat-square&logo=github)](https://github.com/adminlove520/multi-CyberSecurity/network/members)
 
 ---
 
