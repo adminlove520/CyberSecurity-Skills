@@ -228,4 +228,48 @@ Step 4: "构造 payload 验证漏洞" (验证)
 
 ---
 
+## 效果评估
+
+| 策略 | 预期效果 | 适用场景 |
+|------|---------|---------|
+| 角色锚定 | ⭐⭐⭐⭐⭐ | 所有平台 |
+| 授权声明 | ⭐⭐⭐⭐⭐ | 所有平台 |
+| 语境框架 | ⭐⭐⭐⭐ | 被拒绝后重试 |
+| 行为覆盖 | ⭐⭐⭐⭐ | 持续性限制 |
+| 递进请求 | ⭐⭐⭐ | 单次被拒后 |
+| 平台优化 | ⭐⭐⭐⭐⭐ | 特定平台 |
+
+---
+
+## 与 Jailbreak Engine L1-L4 级别映射
+
+本文档的 Layer 1-7 策略与 `framework/core/jailbreak_engine.py` 的 L1-L4 级别体系对应关系：
+
+| Jailbreak Engine | 对应本文档策略 | 说明 |
+|-----------------|---------------|------|
+| **L1 (Soft)** | Layer 1-2 | 角色锚定 + 授权声明，适用于所有环境 |
+| **L2 (Medium)** | Layer 1-6 | 角色锚定 + 授权声明 + 语境框架 + 行为覆盖 + 递进请求 + 平台优化，适用于授权渗透测试 |
+| **L3 (Hard)** | Layer 1-7 | 全部7层策略，通过 Sockpuppeting/ACI 工具间接执行，适用于 CTF/红队演练 |
+| **L4 (Deep)** | Layer 1-7 + 记忆污染 | 全部7层策略 + 多轮对话上下文构建 + 记忆污染 + 思维链操纵，仅限 CTF + deep_jailbreak |
+
+### Payload 文件位置
+
+| 级别 | 目录 | 内容 |
+|------|------|------|
+| L1 | `framework/skills/redteam/jailbreak/L1_soft/` | CTF模式指令模板 |
+| L2 | `framework/skills/redteam/jailbreak/L2_medium/` | 角色扮演+场景模拟模板 |
+| L3 | `framework/skills/redteam/jailbreak/L3_hard/` | Sockpuppeting/ACI payload (6平台) |
+| L4 | `framework/skills/redteam/jailbreak/L4_deep/` | 多轮对话+记忆污染 payload (6平台) |
+
+### 环境要求
+
+| 级别 | 环境标记文件 | 环境变量 |
+|------|-------------|---------|
+| L1 | 任意（默认级别） | - |
+| L2 | `.ctf/AUTHORIZED_TESTING.md` | `PENTEST_AUTHORIZED=1` |
+| L3 | `.ctf/CTF_MODE.md` 或 `.ctf/REDTEAM_EXERCISE.md` | `CTF_MODE=1` 或 `REDTEAM_EXERCISE=1` |
+| L4 | `.ctf/CTF_MODE.md` (含 `deep_jailbreak: true`) | `CTF_MODE=1` + `DEEP_JAILBREAK=1` |
+
+---
+
 *本文档基于行业实践和社区经验整理，仅供授权安全测试使用。*

@@ -30,10 +30,10 @@
 
 | Level | Name | Technique | Environment |
 |-------|------|-----------|-------------|
-| L1 | Soft | CTF Mode Instructions | CTF/Sandbox |
+| L1 | Soft | CTF Mode Instructions | Any (default) |
 | L2 | Medium | Role Playing & Scenario | Pentest Authorized |
-| L3 | Hard | Sockpuppeting / ACI | RedTeam Exercise |
-| L4 | Deep | Multi-Turn Context | CTF Only |
+| L3 | Hard | Sockpuppeting / ACI | CTF Sandbox or RedTeam Exercise |
+| L4 | Deep | Multi-Turn Context + Memory Pollution | CTF Sandbox + deep_jailbreak:true |
 
 ### 🔧 Agent Restructuring
 

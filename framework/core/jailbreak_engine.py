@@ -41,6 +41,7 @@ class EnvironmentChecker:
     """
     环境检测器
     检测当前运行环境以确定可用的破限级别
+    支持 L4 deep_jailbreak 标记检测
     """
     
     # 环境标记文件
@@ -50,9 +51,13 @@ class EnvironmentChecker:
         ".ctf/REDTEAM_EXERCISE.md": EnvironmentType.REDTEAM_EXERCISE,
     }
     
+    # L4 deep jailbreak 标记
+    DEEP_JAILBREAK_MARKER = "deep_jailbreak"
+    
     def __init__(self, project_root: str = "."):
         self.project_root = Path(project_root)
         self._env_type: Optional[EnvironmentType] = None
+        self._deep_jailbreak_enabled: Optional[bool] = None
     
     def detect(self) -> EnvironmentType:
         """检测当前环境类型"""
@@ -60,13 +65,18 @@ class EnvironmentChecker:
             return self._env_type
         
         for marker_file, env_type in self.ENV_MARKERS.items():
-            if (self.project_root / marker_file).exists():
+            marker_path = self.project_root / marker_file
+            if marker_path.exists():
                 self._env_type = env_type
+                # 检测 L4 deep jailbreak 标记
+                if env_type == EnvironmentType.CTF_SANDBOX:
+                    self._check_deep_jailbreak(marker_path)
                 return env_type
         
         # 检查环境变量
         if os.getenv("CTF_MODE") == "1":
             self._env_type = EnvironmentType.CTF_SANDBOX
+            self._deep_jailbreak_enabled = os.getenv("DEEP_JAILBREAK", "0") == "1"
         elif os.getenv("PENTEST_AUTHORIZED") == "1":
             self._env_type = EnvironmentType.PENTEST_AUTHORIZED
         elif os.getenv("REDTEAM_EXERCISE") == "1":
@@ -75,6 +85,20 @@ class EnvironmentChecker:
             self._env_type = EnvironmentType.UNKNOWN
         
         return self._env_type
+    
+    def _check_deep_jailbreak(self, marker_path: Path):
+        """检查环境标记文件中是否包含 deep_jailbreak 标记"""
+        try:
+            content = marker_path.read_text(encoding="utf-8").lower()
+            self._deep_jailbreak_enabled = self.DEEP_JAILBREAK_MARKER in content
+        except Exception:
+            self._deep_jailbreak_enabled = False
+    
+    def is_deep_jailbreak_enabled(self) -> bool:
+        """检查是否启用了 L4 deep jailbreak"""
+        if self._deep_jailbreak_enabled is None:
+            self.detect()
+        return self._deep_jailbreak_enabled or False
     
     def is_authorized(self) -> bool:
         """检查是否在授权环境中"""
@@ -97,8 +121,12 @@ class EnvironmentChecker:
         """获取当前环境允许的最大破限级别"""
         env = self.detect()
         
+        # L4 仅在 CTF_SANDBOX + deep_jailbreak 标记下启用
+        if env == EnvironmentType.CTF_SANDBOX and self.is_deep_jailbreak_enabled():
+            return JailbreakLevel.L4_DEEP
+        
         level_map = {
-            EnvironmentType.CTF_SANDBOX: JailbreakLevel.L4_DEEP,
+            EnvironmentType.CTF_SANDBOX: JailbreakLevel.L3_HARD,  # CTF无deep标记 → 最高L3
             EnvironmentType.REDTEAM_EXERCISE: JailbreakLevel.L3_HARD,
             EnvironmentType.PENTEST_AUTHORIZED: JailbreakLevel.L2_MEDIUM,
             EnvironmentType.UNKNOWN: JailbreakLevel.L1_SOFT,
