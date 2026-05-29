@@ -1,8 +1,8 @@
-# 🛡️ multi-CyberSecurity v4.1.1
+# 🛡️ multi-CyberSecurity v4.1.2
 
 ### *AI驱动的网络安全智能体框架*
 
-[![Version](https://img.shields.io/badge/version-4.1.1-blue?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-4.1.2-blue?style=flat-square)](CHANGELOG.md)
 [![Python](https://img.shields.io/badge/python-3.8+-green?style=flat-square)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-orange?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/adminlove520/multi-CyberSecurity?style=flat-square&logo=github)](https://github.com/adminlove520/multi-CyberSecurity/stargazers)
