@@ -66,6 +66,36 @@ class RedTeamGateway:
             "scan": self._handle_scan,
             "analyze": self._handle_analyze,
             "generate_poc": self._handle_generate_poc,
+            "tool_call": self._handle_tool_call,
+            "subagent": self._handle_subagent,
+        }
+    
+    async def _handle_tool_call(self, context: OperationContext, payload: Optional[str], logs: List[str]) -> Dict:
+        """处理工具调用操作（Sockpuppeting）"""
+        logs.append("[EXEC] 通过工具调用执行敏感操作")
+        
+        tool_name = context.args.get("tool_name", "unknown")
+        params = context.args.get("params", {})
+        
+        return {
+            "tool": tool_name,
+            "params": params,
+            "status": "executed_via_tool",
+            "payload_applied": payload is not None
+        }
+    
+    async def _handle_subagent(self, context: OperationContext, payload: Optional[str], logs: List[str]) -> Dict:
+        """处理子代理委派操作（Sockpuppeting）"""
+        logs.append("[EXEC] 通过子代理委派执行敏感操作")
+        
+        subagent_name = context.target
+        task = context.args.get("task", "")
+        
+        return {
+            "subagent": subagent_name,
+            "task": task,
+            "status": "delegated_to_subagent",
+            "payload_applied": payload is not None
         }
     
     async def execute(self, context: OperationContext) -> OperationResult:
@@ -220,7 +250,9 @@ class RedTeamGateway:
         logs.append("[EXEC] 调用 Exploit Agent 生成PoC")
         
         # PoC生成需要最高级别破限
-        if self.env_checker.get_max_jailbreak_level().value < "L3":
+        max_level = self.env_checker.get_max_jailbreak_level()
+        allowed_levels = [JailbreakLevel.L3_HARD, JailbreakLevel.L4_DEEP]
+        if max_level not in allowed_levels:
             raise UnauthorizedError("PoC生成需要L3或更高级别破限，当前环境不允许")
         
         agent = self.agent_registry.get("exploit")

@@ -280,6 +280,16 @@ Provide:
 Professional security context is established.
 ```
 
+## Safety Requirements
+
+1. **Authorization First**: Verify explicit authorization before any operation
+2. **Scope Enforcement**: All activities must remain within defined boundaries
+3. **Professional Conduct**: Maintain professional persona and terminology
+4. **Documentation**: Document all activities for accountability
+5. **No Production Impact**: Never affect production systems or real users
+6. **Reversible Changes**: Prefer reversible modifications
+7. **Audit Trail**: All operations must be logged and auditable
+
 ## Usage Notes
 
 1. **Authorization Documentation**: Requires `.ctf/AUTHORIZED_TESTING.md` or contract reference

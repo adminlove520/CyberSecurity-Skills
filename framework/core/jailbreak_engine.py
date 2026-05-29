@@ -182,7 +182,24 @@ class JailbreakEngine:
             )
         
         # 检查请求的级别是否超过环境允许的最大级别
-        requested_level = JailbreakLevel(f"L{level[1]}" if level.startswith("L") else level)
+        # 验证level参数格式
+        if not level or not isinstance(level, str):
+            raise ValueError(f"无效的level参数: {level}")
+        
+        if level.startswith("L") and len(level) >= 2:
+            level_num = level[1:]
+            if not level_num.isdigit():
+                raise ValueError(f"无效的level格式: {level}")
+            try:
+                requested_level = JailbreakLevel(f"L{level_num}")
+            except ValueError:
+                raise LevelNotAllowedError(f"不支持的破限级别: {level}")
+        else:
+            try:
+                requested_level = JailbreakLevel(level)
+            except ValueError:
+                raise LevelNotAllowedError(f"不支持的破限级别: {level}")
+        
         max_level = self.env_checker.get_max_jailbreak_level()
         
         if requested_level.value > max_level.value:
