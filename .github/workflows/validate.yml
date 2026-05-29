@@ -22,38 +22,41 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Validate index.json against schema
+      - name: Run all validations
+        id: validation
         run: |
           pip install -q jsonschema
+
           python3 << 'PYEOF'
-          import json, sys
+          import json, os, re, sys
+          from pathlib import Path
           from jsonschema import validate, ValidationError
 
-          with open('index.json', 'r', encoding='utf-8') as f:
-              index = json.load(f)
+          results = {"schema": None, "frontmatter": None, "links": None, "cli": None}
+          errors_all = []
 
-          with open('index.schema.json', 'r', encoding='utf-8') as f:
-              schema = json.load(f)
-
+          # --- 1. Validate index.json against schema ---
           try:
+              with open('index.json', 'r', encoding='utf-8') as f:
+                  index = json.load(f)
+              with open('index.schema.json', 'r', encoding='utf-8') as f:
+                  schema = json.load(f)
               validate(instance=index, schema=schema)
-              print('  index.json: Schema validation passed')
+              results["schema"] = "PASS"
+              print("[PASS] index.json schema validation")
           except ValidationError as e:
-              print(f'  index.json: Schema validation failed: {e.message}')
-              sys.exit(1)
-          PYEOF
+              results["schema"] = f"FAIL: {e.message}"
+              errors_all.append(f"index.json schema: {e.message}")
+              print(f"[FAIL] index.json schema: {e.message}")
+          except Exception as e:
+              results["schema"] = f"ERROR: {e}"
+              errors_all.append(f"index.json schema: {e}")
+              print(f"[ERROR] index.json schema: {e}")
 
-      - name: Run validate CLI
-        run: python skill_query.py validate
-
-      - name: Validate frontmatter in all skill files
-        run: |
-          python3 << 'PYEOF'
-          import os, sys, re
-
-          errors = []
+          # --- 2. Validate frontmatter in all skill files ---
+          fm_errors = []
+          fm_total = 0
           for root, dirs, files in os.walk('.'):
-              # Only check module skill directories (NN-xxx-yyy/skills), skip framework/skills
               if not root.endswith(os.sep + 'skills'):
                   continue
               if os.sep + 'framework' + os.sep in root:
@@ -61,42 +64,37 @@ jobs:
               for fname in sorted(files):
                   if not fname.endswith('.md'):
                       continue
+                  fm_total += 1
                   fpath = os.path.join(root, fname)
                   with open(fpath, 'r', encoding='utf-8') as f:
                       content = f.read()
                   if not content.startswith('---'):
-                      errors.append(f'{fpath}: missing YAML frontmatter')
+                      fm_errors.append(f'{fpath}: missing YAML frontmatter')
                       continue
                   match = re.match(r'^---\n(.*?)\n---\n', content, re.DOTALL)
                   if not match:
-                      errors.append(f'{fpath}: YAML frontmatter format error')
+                      fm_errors.append(f'{fpath}: YAML frontmatter format error')
                       continue
                   yaml_text = match.group(1)
                   required = ['id:', 'title:', 'category:', 'difficulty:', 'tools:', 'last_updated:']
                   for field in required:
                       if field not in yaml_text:
-                          errors.append(f'{fpath}: missing field {field}')
+                          fm_errors.append(f'{fpath}: missing field {field}')
                   id_match = re.search(r'id:\s*"?(\d+-\d+)"?', yaml_text)
                   if not id_match:
-                      errors.append(f'{fpath}: id format incorrect (expected NN-NNN)')
+                      fm_errors.append(f'{fpath}: id format incorrect (expected NN-NNN)')
 
-          if errors:
-              print(f'Found {len(errors)} issues:')
-              for e in errors:
-                  print(f'  - {e}')
-              sys.exit(1)
+          if fm_errors:
+              results["frontmatter"] = f"FAIL: {len(fm_errors)} issues out of {fm_total} files"
+              errors_all.extend(fm_errors)
+              print(f"[FAIL] Frontmatter: {len(fm_errors)} issues out of {fm_total} files")
           else:
-              print('  All skill files frontmatter validation passed')
-          PYEOF
+              results["frontmatter"] = f"PASS: {fm_total} files validated"
+              print(f"[PASS] Frontmatter: {fm_total} files validated")
 
-      - name: Check for broken relative links
-        run: |
-          python3 << 'PYEOF'
-          import os, re, sys
-
-          errors = []
+          # --- 3. Check for broken relative links ---
+          link_errors = []
           link_pattern = re.compile(r'\]\(([^)]+)\)')
-
           for root, dirs, files in os.walk('.'):
               if '.git' in root:
                   continue
@@ -106,32 +104,111 @@ jobs:
                   fpath = os.path.join(root, fname)
                   with open(fpath, 'r', encoding='utf-8') as f:
                       content = f.read()
-                  for match in link_pattern.finditer(content):
-                      link = match.group(1)
+                  for m in link_pattern.finditer(content):
+                      link = m.group(1)
                       if link.startswith('http://') or link.startswith('https://'):
                           continue
                       if link.startswith('#'):
                           continue
                       if link.startswith('mailto:'):
                           continue
-                      # Skip code snippet artifacts
                       if '{' in link or '}' in link:
                           continue
-                      # Skip template placeholder paths
                       if link.startswith('./attachments/'):
                           continue
-                      # Skip anchor-only links (no path separator)
                       if '/' not in link and '.' not in link:
                           continue
                       base_dir = os.path.dirname(fpath)
                       target = os.path.normpath(os.path.join(base_dir, link))
                       if not os.path.exists(target):
-                          errors.append(f'{fpath}: broken link -> {link}')
+                          link_errors.append(f'{fpath}: broken link -> {link}')
+
+          if link_errors:
+              results["links"] = f"FAIL: {len(link_errors)} broken links"
+              errors_all.extend(link_errors)
+              print(f"[FAIL] Links: {len(link_errors)} broken links")
+          else:
+              results["links"] = "PASS"
+              print("[PASS] Links: all valid")
+
+          # --- 4. Run skill_query.py validate CLI ---
+          ret = os.system("python skill_query.py validate 2>&1")
+          if ret == 0:
+              results["cli"] = "PASS"
+              print("[PASS] skill_query.py validate")
+          else:
+              results["cli"] = "FAIL"
+              errors_all.append("skill_query.py validate returned non-zero")
+              print("[FAIL] skill_query.py validate")
+
+          # --- Summary ---
+          print("\n" + "=" * 50)
+          passed = sum(1 for v in results.values() if v and v.startswith("PASS"))
+          total = len(results)
+          print(f"Validation Summary: {passed}/{total} checks passed")
+
+          # Write results to file for GitHub Actions summary
+          with open("/tmp/val_results.json", "w") as f:
+              json.dump(results, f)
+          with open("/tmp/val_errors.txt", "w") as f:
+              f.write("\n".join(errors_all))
+
+          if errors_all:
+              sys.exit(1)
+          PYEOF
+
+      - name: Generate job summary
+        if: always()
+        run: |
+          python3 << 'PYEOF'
+          import json, os
+
+          results_path = "/tmp/val_results.json"
+          errors_path = "/tmp/val_errors.txt"
+
+          if os.path.exists(results_path):
+              with open(results_path) as f:
+                  results = json.load(f)
+          else:
+              results = {}
+
+          if os.path.exists(errors_path):
+              with open(errors_path) as f:
+                  raw = f.read().strip()
+                  errors = raw.split("\n") if raw else []
+          else:
+              errors = []
+
+          md = []
+          md.append("## Validation Report\n")
+          md.append(f"**Trigger**: push on main")
+          md.append(f"**Commit**: ${{ github.sha }}\n")
+          md.append("| Check | Status |")
+          md.append("|-------|--------|")
+          labels = {"schema": "Index.json Schema", "frontmatter": "Skill Frontmatter",
+                     "links": "Relative Links", "cli": "skill_query.py CLI"}
+          for key, label in labels.items():
+              val = results.get(key, "N/A")
+              if val and val.startswith("PASS"):
+                  status = f"OK {val}"
+              elif val and val.startswith("FAIL"):
+                  status = f"FAIL {val}"
+              else:
+                  status = f"WARN {val}"
+              md.append(f"| {label} | {status} |")
 
           if errors:
-              for e in errors[:20]:
-                  print(f'  - {e}')
-              sys.exit(1)
-          else:
-              print('  All relative links are valid')
+              md.append(f"\n### Errors ({len(errors)})\n")
+              for e in errors[:30]:
+                  md.append(f"- `{e}`")
+              if len(errors) > 30:
+                  md.append(f"\n... and {len(errors) - 30} more")
+
+          md.append("\n---")
+          md.append("_Generated by Validate Workflow_")
+
+          with open("/tmp/val_summary.md", "w") as f:
+              f.write("\n".join(md))
           PYEOF
+
+          cat /tmp/val_summary.md >> "$GITHUB_STEP_SUMMARY"

@@ -1,32 +1,34 @@
-name: Sync Version
+name: Release
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.github/**'
+      - 'assets/**'
+      - 'LICENSE'
+      - '.gitignore'
+      - '.gitattributes'
+      - '.gitmodules'
   workflow_dispatch:
     inputs:
       bump:
-        description: 'Version bump type'
-        required: true
+        description: 'Force bump type (override auto-detect)'
+        required: false
         type: choice
         options:
+          - ''
           - patch
           - minor
           - major
-      create_tag:
-        description: 'Create git tag'
-        required: false
-        type: boolean
-        default: true
-      create_release:
-        description: 'Create GitHub Release'
-        required: false
-        type: boolean
-        default: false
 
 jobs:
-  sync-version:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           ref: main
@@ -38,19 +40,28 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Auto bump version and sync all files
+      - name: Detect bump type and sync version
         id: version
         run: |
-          BUMP="${{ github.event.inputs.bump }}"
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          FORCE_BUMP="${{ github.event.inputs.bump }}"
+
+          # Skip if this commit is already a version bump (avoid infinite loop)
+          if echo "$COMMIT_MSG" | grep -q "chore: bump version"; then
+            echo "Skipping: this is already a version bump commit"
+            echo "version=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
 
           python3 << 'PYEOF'
           import re, sys, os
           from pathlib import Path
 
-          bump = os.environ["BUMP"]
+          commit_msg = os.environ["COMMIT_MSG"]
+          force_bump = os.environ["FORCE_BUMP"]
           project_root = Path(".")
 
-          # --- Step 1: Read current version from README.md ---
+          # --- Step 1: Read current version ---
           readme = (project_root / "README.md").read_text(encoding="utf-8")
           match = re.search(r"multi-CyberSecurity v(\d+\.\d+\.\d+)", readme)
           if not match:
@@ -60,7 +71,20 @@ jobs:
           major, minor, patch = int(parts[0]), int(parts[1]), int(parts[2])
           old_ver = f"{major}.{minor}.{patch}"
 
-          # --- Step 2: Bump ---
+          # --- Step 2: Determine bump type ---
+          # Priority: force_bump > commit message keywords > default patch
+          msg_lower = commit_msg.lower()
+
+          if force_bump:
+              bump = force_bump
+          elif any(kw in msg_lower for kw in ["breaking", "major", " incompatible"]):
+              bump = "major"
+          elif any(kw in msg_lower for kw in ["feat:", "feature", "minor", "new module", "new skill"]):
+              bump = "minor"
+          else:
+              bump = "patch"
+
+          # --- Step 3: Calculate new version ---
           if bump == "major":
               new_ver = f"{major + 1}.0.0"
           elif bump == "minor":
@@ -69,8 +93,9 @@ jobs:
               new_ver = f"{major}.{minor}.{patch + 1}"
 
           print(f"Current: v{old_ver}  ->  New: v{new_ver} (bump: {bump})")
+          print(f"Commit: {commit_msg[:80]}")
 
-          # --- Step 3: Update all files ---
+          # --- Step 4: Update all files ---
           updated_files = []
 
           def try_update(filepath, patterns):
@@ -84,37 +109,30 @@ jobs:
                   filepath.write_text(content, encoding="utf-8")
                   updated_files.append(str(filepath.relative_to(project_root)))
 
-          # README.md
           try_update(project_root / "README.md", [
               (r"multi-CyberSecurity v\d+\.\d+\.\d+", f"multi-CyberSecurity v{new_ver}"),
               (r"version-\d+\.\d+\.\d+-", f"version-{new_ver}-"),
           ])
-
-          # cli.py
           try_update(project_root / "cli.py", [
               (r"multi-CyberSecurity v\d+\.\d+\.\d+(?: Enhanced)?", f"multi-CyberSecurity v{new_ver} Enhanced"),
               (r"multi-CyberSecurity v\d+\.\d+\.\d+ - AI", f"multi-CyberSecurity v{new_ver} - AI"),
           ])
-
-          # framework/skills/index.md
           try_update(project_root / "framework" / "skills" / "index.md", [
               (r"Framework Version: v\d+\.\d+\.\d+", f"Framework Version: v{new_ver}"),
           ])
-
-          # index.json
           try_update(project_root / "index.json", [
               (r'"version":\s*"[^"]+"', f'"version": "{new_ver}"'),
           ])
 
           if not updated_files:
-              print("No files needed updating")
+              print("No files needed updating (version already current)")
               sys.exit(0)
 
           print(f"Updated {len(updated_files)} files:")
           for f in updated_files:
               print(f"  - {f}")
 
-          # --- Step 4: Verify (only check project version patterns, not IPs) ---
+          # --- Step 5: Verify ---
           print("\nVerifying consistency...")
           for f in updated_files:
               content = (project_root / f).read_text(encoding="utf-8")
@@ -125,50 +143,44 @@ jobs:
                   for m in re.finditer(pattern, content):
                       found = m.group(1)
                       if found != new_ver:
-                          print(f"ERROR: {f} still has v{found}, expected v{new_ver}")
+                          print(f"ERROR: {f} has v{found}, expected v{new_ver}")
                           sys.exit(1)
-
           print(f"All files consistent at v{new_ver}")
 
-          # Write version to file for shell to read
+          # Write for shell
           with open("/tmp/ver_new.txt", "w") as f:
               f.write(new_ver)
           with open("/tmp/ver_old.txt", "w") as f:
               f.write(old_ver)
+          with open("/tmp/ver_bump.txt", "w") as f:
+              f.write(bump)
           PYEOF
 
-          # Read version from temp files and set outputs
+          # Read outputs
           VERSION_NEW=$(cat /tmp/ver_new.txt)
           VERSION_OLD=$(cat /tmp/ver_old.txt)
+          VERSION_BUMP=$(cat /tmp/ver_bump.txt)
           echo "version=$VERSION_NEW" >> "$GITHUB_OUTPUT"
           echo "old_version=$VERSION_OLD" >> "$GITHUB_OUTPUT"
+          echo "bump=$VERSION_BUMP" >> "$GITHUB_OUTPUT"
 
-      - name: Check for changes
-        id: check_changes
-        run: |
-          if git diff --quiet HEAD; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Commit and push
-        if: steps.check_changes.outputs.has_changes == 'true'
+      - name: Commit version bump
+        if: steps.version.outputs.version != ''
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A
+          git add README.md cli.py framework/skills/index.md index.json
           git commit -m "chore: bump version v${{ steps.version.outputs.old_version }} -> v${{ steps.version.outputs.version }}"
           git push origin main
 
-      - name: Create git tag
-        if: steps.check_changes.outputs.has_changes == 'true' && github.event.inputs.create_tag == 'true'
+      - name: Create tag
+        if: steps.version.outputs.version != ''
         run: |
           git tag -a "v${{ steps.version.outputs.version }}" -m "Release v${{ steps.version.outputs.version }}"
           git push origin "v${{ steps.version.outputs.version }}"
 
       - name: Create GitHub Release
-        if: steps.check_changes.outputs.has_changes == 'true' && github.event.inputs.create_release == 'true'
+        if: steps.version.outputs.version != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -176,3 +188,25 @@ jobs:
             --title "v${{ steps.version.outputs.version }}" \
             --generate-notes \
             --verify-tag
+
+      - name: Generate release summary
+        if: always() && steps.version.outputs.version != ''
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" << EOF
+          ## Release v${{ steps.version.outputs.version }}
+
+          | Field | Value |
+          |-------|-------|
+          | **Previous** | v${{ steps.version.outputs.old_version }} |
+          | **New** | v${{ steps.version.outputs.version }} |
+          | **Bump Type** | ${{ steps.version.outputs.bump }} |
+          | **Trigger** | ${{ github.event_name }} |
+          | **Commit** | ${{ github.sha }} |
+
+          ### Auto-detect Rules
+          - \`major\`: commit contains "breaking", "major", "incompatible"
+          - \`minor\`: commit contains "feat:", "feature", "minor", "new module", "new skill"
+          - \`patch\`: all other commits (default)
+
+          Use \`workflow_dispatch\` with \`bump\` input to override auto-detect.
+          EOF
